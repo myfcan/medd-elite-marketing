@@ -10,7 +10,7 @@ const MethodologySection = () => {
             <span className="text-2xl font-bold text-white">M.E.D.D</span>
           </div>
           
-          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
             Metodologia{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               M.E.D.D.

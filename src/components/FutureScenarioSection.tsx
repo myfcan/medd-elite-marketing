@@ -11,7 +11,7 @@ const FutureScenarioSection = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
             O cenário que se desenha para{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               os próximos 5 anos

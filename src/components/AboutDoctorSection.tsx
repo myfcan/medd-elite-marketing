@@ -20,7 +20,7 @@ const AboutDoctorSection = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-14 animate-fade-in">
-          <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
             A{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               transformação com M.E.D.D.
