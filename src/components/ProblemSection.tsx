@@ -2,17 +2,17 @@ import { UserX, TrendingDown, AlertTriangle, BarChart3 } from 'lucide-react';
 
 const ProblemSection = () => {
   return (
-    <section id="sobre" className="py-24 bg-white">
+    <section id="sobre" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
             Por que médicos competentes continuam{" "}
-            <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
+            <span className="text-gray-900">
               dependentes de convênios?
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
             Mesmo com excelência técnica, a maioria dos médicos não consegue construir 
             autoridade suficiente para atrair pacientes particulares consistentemente.
           </p>
@@ -20,9 +20,9 @@ const ProblemSection = () => {
 
         {/* Problem Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          <div className="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-100 transition-colors">
-              <TrendingDown className="w-7 h-7 text-red-500" />
+          <div className="group bg-white border border-gray-300 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-200 transition-colors">
+              <TrendingDown className="w-7 h-7 text-gray-700" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Ausência de Estratégia</h3>
             <p className="text-gray-600 leading-relaxed">
@@ -30,9 +30,9 @@ const ProblemSection = () => {
             </p>
           </div>
 
-          <div className="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-100 transition-colors">
-              <AlertTriangle className="w-7 h-7 text-red-500" />
+          <div className="group bg-white border border-gray-300 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-200 transition-colors">
+              <AlertTriangle className="w-7 h-7 text-gray-700" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Dependência de Indicações</h3>
             <p className="text-gray-600 leading-relaxed">
@@ -40,9 +40,9 @@ const ProblemSection = () => {
             </p>
           </div>
 
-          <div className="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-100 transition-colors">
-              <BarChart3 className="w-7 h-7 text-red-500" />
+          <div className="group bg-white border border-gray-300 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-200 transition-colors">
+              <BarChart3 className="w-7 h-7 text-gray-700" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Sistema de Atração</h3>
             <p className="text-gray-600 leading-relaxed">
