@@ -21,9 +21,9 @@ const AboutDoctorSection = () => {
         {/* Header */}
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
-            Nossa{" "}
+            A{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Prova Social
+              transformação com M.E.D.D.
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
