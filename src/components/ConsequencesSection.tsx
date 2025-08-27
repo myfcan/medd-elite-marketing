@@ -91,10 +91,10 @@ const ConsequencesSection = () => {
                 <div className="space-y-8">
                   {[
                     { 
-                      label: "+45% de crescimento anual", 
+                      label: "+45% ao ano", 
                       value: "", 
                       trend: "up", 
-                      description: "A procura por médicos de qualidade no particular está aumentando rapidamente",
+                      description: "A demanda por consultas privadas cresce rápido — mais pacientes querem médicos de qualidade.",
                       icon: ArrowUp,
                       gradient: "from-green-400 to-emerald-500"
                     },
