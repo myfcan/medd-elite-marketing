@@ -2,10 +2,10 @@ import { UserX, TrendingDown, AlertTriangle, BarChart3 } from 'lucide-react';
 
 const ProblemSection = () => {
   return (
-    <section id="sobre" className="py-16 bg-white">
+    <section id="sobre" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-14">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
             Por que médicos competentes continuam{" "}
             <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
@@ -19,7 +19,7 @@ const ProblemSection = () => {
         </div>
 
         {/* Problem Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-8 mb-14">
           <div className="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-100 transition-colors">
               <TrendingDown className="w-7 h-7 text-red-500" />

@@ -2,7 +2,7 @@ import { Award, Target, Zap, CheckCircle, Users, Code, TrendingUp } from 'lucide
 
 const MethodologySection = () => {
   return (
-    <section id="metodologia" className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="metodologia" className="py-12 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-14">

@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative pt-20 pb-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
+    <section className="relative pt-16 pb-16 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-secondary/10 to-primary/10 rounded-full blur-3xl"></div>
@@ -120,7 +120,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 pt-16 border-t border-gray-200">
+        <div className="mt-16 pt-12 border-t border-gray-200">
           <p className="text-center text-gray-500 mb-12 text-xl">Resultados comprovados de nossos clientes</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>

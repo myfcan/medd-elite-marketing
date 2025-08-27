@@ -11,7 +11,7 @@ const AboutDoctorSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-background via-primary/5 to-secondary/10 relative overflow-hidden">
+    <section className="py-12 bg-gradient-to-br from-background via-primary/5 to-secondary/10 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60"></div>

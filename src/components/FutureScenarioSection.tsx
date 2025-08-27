@@ -2,7 +2,7 @@ import { AlertTriangle, TrendingUp, TrendingDown, BarChart3, Users, ArrowUp, Arr
 
 const FutureScenarioSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
+    <section className="py-12 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60"></div>
@@ -10,7 +10,7 @@ const FutureScenarioSection = () => {
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-20 animate-fade-in">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
             O cenário que se desenha para{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -22,7 +22,7 @@ const FutureScenarioSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 mb-12">
           {/* Cenário Atual */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative group">

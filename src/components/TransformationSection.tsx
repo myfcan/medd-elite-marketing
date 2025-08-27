@@ -20,7 +20,7 @@ const TransformationSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
+    <section className="py-12 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 left-10 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
@@ -28,7 +28,7 @@ const TransformationSection = () => {
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-20 animate-fade-in">
+        <div className="text-center mb-14 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
             A diferença entre{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -41,7 +41,7 @@ const TransformationSection = () => {
         </div>
 
         {/* Modern Comparison Layout */}
-        <div className="relative mb-20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div className="relative mb-14 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
             
             {/* Without System - Enhanced */}
