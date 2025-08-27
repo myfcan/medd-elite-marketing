@@ -77,22 +77,18 @@ const AboutDoctorSection = () => {
 
                 {/* Right Column - Info */}
                 <div className="space-y-6">
-                  {/* Mini Resumo */}
+                  {/* DoutorTontura */}
                   <div>
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                         <Award className="w-4 h-4 text-white" />
                       </div>
-                      <h4 className="text-xl font-bold text-foreground">Mini Resumo</h4>
+                      <h4 className="text-xl font-bold text-foreground">DoutorTontura</h4>
                     </div>
                     
-                    <p className="text-muted-foreground leading-relaxed mb-4">
+                    <p className="text-muted-foreground leading-relaxed mb-6">
                       Sou Dr. Saulo Nader, neurologista pela USP, médico pela FAMEMA, apresentado como Dr. Tontura em minhas diversas aparições em programas.
                     </p>
-                    
-                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-4 mb-6 border-l-4 border-primary">
-                      <p className="text-lg font-semibold text-foreground">HOJE FATURA 20 MILHÕES POR MÊS.</p>
-                    </div>
                   </div>
 
                   {/* Depoimento */}
