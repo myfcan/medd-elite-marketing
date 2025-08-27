@@ -8,7 +8,10 @@ const MethodologySection = () => {
       title: "Arquitetura de Autoridade",
       subtitle: "Ser reconhecido como referência na sua especialidade",
       gradient: "from-primary to-primary/80",
-      color: "secondary",
+      textColor: "text-secondary",
+      bgColor: "bg-secondary/5",
+      borderColor: "border-secondary/10",
+      iconBg: "bg-secondary/20",
       features: [
         "Arquitetura de marca pessoal profissional",
         "Posicionamento estratégico diferenciado", 
@@ -21,7 +24,10 @@ const MethodologySection = () => {
       title: "Sistema de Atração Seletiva",
       subtitle: "Atraindo pacientes certos, não curiosos de convênio",
       gradient: "from-secondary to-secondary/80",
-      color: "primary",
+      textColor: "text-primary",
+      bgColor: "bg-primary/5",
+      borderColor: "border-primary/10",
+      iconBg: "bg-primary/20",
       features: [
         "Conteúdo estratégico (posts, stories, roteiros)",
         "Funil validado de atração e conversão",
@@ -34,7 +40,10 @@ const MethodologySection = () => {
       title: "Automação Inteligente com Geniumed",
       subtitle: "Sistema que trabalha 24h gerando previsibilidade",
       gradient: "from-gray-700 to-gray-600",
-      color: "gray-600",
+      textColor: "text-gray-700",
+      bgColor: "bg-gray-100/50",
+      borderColor: "border-gray-200",
+      iconBg: "bg-gray-200",
       features: [
         "Qualificação de leads via IA",
         "Engajamento inteligente 24/7",
@@ -44,75 +53,75 @@ const MethodologySection = () => {
   ];
 
   return (
-    <section id="metodologia" className="py-12 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
-      {/* Background Elements */}
+    <section id="metodologia" className="py-16 md:py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+      {/* Background Elements - Responsive positioning */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl opacity-30"></div>
-      <div className="absolute bottom-20 right-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute top-10 md:top-20 left-4 md:left-10 w-32 md:w-64 h-32 md:h-64 bg-primary/10 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute bottom-10 md:bottom-20 right-4 md:right-10 w-40 md:w-80 h-40 md:h-80 bg-secondary/10 rounded-full blur-3xl opacity-20"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        {/* Header */}
-        <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-8 shadow-lg">
-            <span className="text-2xl font-bold text-white">M.E.D.D</span>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header - Enhanced responsive typography */}
+        <div className="text-center mb-12 md:mb-16 lg:mb-20">
+          <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-6 md:mb-8 shadow-lg animate-fade-in">
+            <span className="text-lg md:text-2xl font-bold text-white">M.E.D.D</span>
           </div>
           
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 md:mb-6 lg:mb-8 leading-tight">
             Metodologia{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               M.E.D.D.
             </span>
           </h2>
           
-          <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto font-medium leading-relaxed mb-8">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto font-medium leading-relaxed mb-6 md:mb-8">
             Um sistema completo e integrado desenvolvido especificamente para médicos 
             que desejam construir autoridade digital e fluxo previsível de pacientes particulares.
           </p>
           
-          <div className="bg-white border border-gray-200 rounded-2xl p-6 max-w-3xl mx-auto shadow-sm">
-            <p className="text-lg font-semibold text-gray-900">
+          <div className="bg-white border border-gray-200 rounded-2xl p-4 md:p-6 max-w-3xl mx-auto shadow-sm hover:shadow-md transition-shadow duration-300">
+            <p className="text-sm sm:text-base md:text-lg font-semibold text-gray-900">
               <strong>Não é marketing tradicional.</strong> É um sistema integrado desenvolvido 
               exclusivamente para a realidade médica brasileira.
             </p>
           </div>
         </div>
 
-        {/* Flow Steps - Desktop */}
-        <div className="hidden lg:block mb-16">
+        {/* Flow Steps - Desktop (xl and above) */}
+        <div className="hidden xl:block mb-16 lg:mb-20">
           <div className="relative">
             {/* Connection Line */}
             <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-gray-500 rounded-full transform -translate-y-1/2 z-0"></div>
             
-            <div className="grid grid-cols-3 gap-8 relative z-10">
+            <div className="grid grid-cols-3 gap-6 lg:gap-8 relative z-10">
               {pillars.map((pillar, index) => (
-                <div key={pillar.number} className="flex flex-col items-center">
-                  {/* Step Card - Fixed height for uniformity */}
-                  <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 w-full mb-6 h-[600px] flex flex-col">
+                <div key={pillar.number} className="flex flex-col items-center group">
+                  {/* Step Card - Enhanced with better animations */}
+                  <div className="bg-white border-2 border-gray-200 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-500 w-full mb-6 h-[580px] lg:h-[620px] flex flex-col group-hover:-translate-y-2 group-hover:scale-[1.02]">
                     {/* Icon Circle */}
-                    <div className={`w-20 h-20 bg-gradient-to-r ${pillar.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg`}>
-                      <pillar.icon className="w-10 h-10 text-white" />
+                    <div className={`w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-r ${pillar.gradient} rounded-2xl flex items-center justify-center mx-auto mb-4 lg:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                      <pillar.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
                     </div>
                     
                     {/* Step Number */}
-                    <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-xl font-bold text-gray-700">{pillar.number}</span>
+                    <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-200 transition-colors">
+                      <span className="text-lg lg:text-xl font-bold text-gray-700">{pillar.number}</span>
                     </div>
                     
                     {/* Content */}
-                    <h3 className="text-lg font-bold text-gray-900 mb-3 text-center leading-tight">
+                    <h3 className="text-base lg:text-lg font-bold text-gray-900 mb-3 text-center leading-tight">
                       {pillar.title}
                     </h3>
                     
-                    <p className={`text-${pillar.color} text-center mb-6 font-semibold text-sm`}>
+                    <p className={`${pillar.textColor} text-center mb-4 lg:mb-6 font-semibold text-sm`}>
                       "{pillar.subtitle}"
                     </p>
                     
                     {/* Features - flex-grow to fill remaining space */}
                     <div className="space-y-3 flex-grow">
                       {pillar.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className={`flex items-start space-x-3 p-3 bg-gradient-to-r from-${pillar.color}/5 to-transparent rounded-xl border border-${pillar.color}/10`}>
-                          <div className={`w-5 h-5 bg-${pillar.color}/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                            <CheckCircle className={`w-3 h-3 text-${pillar.color}`} />
+                        <div key={featureIndex} className={`flex items-start space-x-3 p-3 bg-gradient-to-r ${pillar.bgColor} to-transparent rounded-xl border ${pillar.borderColor} hover:shadow-sm transition-shadow duration-200`}>
+                          <div className={`w-5 h-5 ${pillar.iconBg} rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                            <CheckCircle className={`w-3 h-3 ${pillar.textColor}`} />
                           </div>
                           <span className="text-sm text-gray-700 font-medium leading-relaxed">{feature}</span>
                         </div>
@@ -124,7 +133,7 @@ const MethodologySection = () => {
                   {index < pillars.length - 1 && (
                     <div className="absolute top-1/2 transform -translate-y-1/2" 
                          style={{ left: `${(index + 1) * 33.33 - 2}%` }}>
-                      <div className="w-8 h-8 bg-white rounded-full border-4 border-gray-300 flex items-center justify-center shadow-md">
+                      <div className="w-8 h-8 bg-white rounded-full border-4 border-gray-300 flex items-center justify-center shadow-md hover:border-primary transition-colors duration-300">
                         <ArrowRight className="w-4 h-4 text-gray-600" />
                       </div>
                     </div>
@@ -135,43 +144,83 @@ const MethodologySection = () => {
           </div>
         </div>
 
-        {/* Flow Steps - Mobile/Tablet */}
-        <div className="lg:hidden space-y-8 mb-16">
+        {/* Flow Steps - Tablet (lg to xl) */}
+        <div className="hidden lg:block xl:hidden mb-16">
+          <div className="grid grid-cols-1 gap-8">
+            {pillars.map((pillar, index) => (
+              <div key={pillar.number} className="flex items-center space-x-8 group">
+                {/* Icon and Number */}
+                <div className="flex-shrink-0 flex flex-col items-center">
+                  <div className={`w-20 h-20 bg-gradient-to-r ${pillar.gradient} rounded-2xl flex items-center justify-center shadow-lg mb-4`}>
+                    <pillar.icon className="w-10 h-10 text-white" />
+                  </div>
+                  <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+                    <span className="text-xl font-bold text-gray-700">{pillar.number}</span>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1 bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
+                    {pillar.title}
+                  </h3>
+                  <p className={`${pillar.textColor} mb-6 font-semibold`}>
+                    "{pillar.subtitle}"
+                  </p>
+                  
+                  <div className="grid grid-cols-1 gap-3">
+                    {pillar.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className={`flex items-start space-x-3 p-4 bg-gradient-to-r ${pillar.bgColor} to-transparent rounded-xl border ${pillar.borderColor}`}>
+                        <div className={`w-5 h-5 ${pillar.iconBg} rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                          <CheckCircle className={`w-3 h-3 ${pillar.textColor}`} />
+                        </div>
+                        <span className="text-sm text-gray-700 font-medium leading-relaxed">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Flow Steps - Mobile/Small Tablet */}
+        <div className="lg:hidden space-y-6 md:space-y-8 mb-12 md:mb-16">
           {pillars.map((pillar, index) => (
             <div key={pillar.number} className="relative">
-              <div className="flex items-start space-x-6">
+              <div className="flex items-start space-x-4 md:space-x-6">
                 {/* Left Side - Icon and Number */}
                 <div className="flex-shrink-0 flex flex-col items-center">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${pillar.gradient} rounded-2xl flex items-center justify-center shadow-lg mb-3`}>
-                    <pillar.icon className="w-8 h-8 text-white" />
+                  <div className={`w-14 h-14 md:w-16 md:h-16 bg-gradient-to-r ${pillar.gradient} rounded-2xl flex items-center justify-center shadow-lg mb-3`}>
+                    <pillar.icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
-                  <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm font-bold text-gray-700">{pillar.number}</span>
+                  <div className="w-7 h-7 md:w-8 md:h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                    <span className="text-xs md:text-sm font-bold text-gray-700">{pillar.number}</span>
                   </div>
                   
                   {/* Vertical Line (except for last item) */}
                   {index < pillars.length - 1 && (
-                    <div className="w-1 h-16 bg-gradient-to-b from-primary to-secondary rounded-full mt-4"></div>
+                    <div className="w-1 h-12 md:h-16 bg-gradient-to-b from-primary to-secondary rounded-full mt-4"></div>
                   )}
                 </div>
                 
-                {/* Right Side - Content - Fixed min-height for uniformity */}
-                <div className="flex-1 bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg min-h-[280px] flex flex-col">
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 leading-tight">
+                {/* Right Side - Content */}
+                <div className="flex-1 bg-white border-2 border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-lg min-h-[260px] md:min-h-[280px] flex flex-col">
+                  <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3 leading-tight">
                     {pillar.title}
                   </h3>
-                  <p className={`text-${pillar.color} mb-4 font-semibold text-sm`}>
+                  <p className={`${pillar.textColor} mb-4 font-semibold text-xs md:text-sm`}>
                     "{pillar.subtitle}"
                   </p>
                   
-                  {/* Features - flex-grow to fill remaining space */}
-                  <div className="space-y-3 flex-grow">
+                  {/* Features */}
+                  <div className="space-y-2 md:space-y-3 flex-grow">
                     {pillar.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className={`flex items-start space-x-3 p-3 bg-gradient-to-r from-${pillar.color}/5 to-transparent rounded-xl border border-${pillar.color}/10`}>
-                        <div className={`w-5 h-5 bg-${pillar.color}/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                          <CheckCircle className={`w-3 h-3 text-${pillar.color}`} />
+                      <div key={featureIndex} className={`flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-gradient-to-r ${pillar.bgColor} to-transparent rounded-lg md:rounded-xl border ${pillar.borderColor}`}>
+                        <div className={`w-4 h-4 md:w-5 md:h-5 ${pillar.iconBg} rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                          <CheckCircle className={`w-2.5 h-2.5 md:w-3 md:h-3 ${pillar.textColor}`} />
                         </div>
-                        <span className="text-sm text-gray-700 font-medium leading-relaxed">{feature}</span>
+                        <span className="text-xs md:text-sm text-gray-700 font-medium leading-relaxed">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -181,28 +230,30 @@ const MethodologySection = () => {
           ))}
         </div>
 
-        {/* Integration Result - Flow Style */}
-        <div className="mb-16">
-          <div className="relative bg-gradient-to-r from-primary to-secondary rounded-3xl p-8 sm:p-12 text-center text-white shadow-2xl">
-            <div className="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
-              <TrendingUp className="w-12 h-12" />
+        {/* Integration Result - Enhanced responsiveness */}
+        <div className="mb-12 md:mb-16 lg:mb-20">
+          <div className="relative bg-gradient-to-r from-primary to-secondary rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-12 text-center text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 md:mb-8">
+              <TrendingUp className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
             </div>
-            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">RESULTADO: INTEGRAÇÃO SISTÊMICA</h4>
-            <p className="text-lg sm:text-xl font-medium max-w-4xl mx-auto leading-relaxed opacity-95">
+            <h4 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 md:mb-6 leading-tight">
+              RESULTADO: INTEGRAÇÃO SISTÊMICA
+            </h4>
+            <p className="text-sm md:text-base lg:text-lg xl:text-xl font-medium max-w-4xl mx-auto leading-relaxed opacity-95">
               Os 3 pilares trabalham em perfeita sinergia para criar um ecossistema completo 
               de crescimento sustentável, previsível e escalável para sua prática médica.
             </p>
           </div>
         </div>
 
-        {/* Vantagens Exclusivas */}
-        <div className="bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg">
-          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
+        {/* Vantagens Exclusivas - Enhanced grid and spacing */}
+        <div className="bg-white border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 lg:p-8 xl:p-12 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-8 md:mb-10 lg:mb-12">
             Vantagens Exclusivas do Sistema{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">M.E.D.D.</span>
           </h3>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {[
               {
                 title: "Saia da dependência dos convênios",
@@ -229,15 +280,15 @@ const MethodologySection = () => {
                 description: "Resultados consistentes que crescem mês após mês"
               }
             ].map((item, index) => (
-              <div key={index} className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center mt-1 group-hover:bg-secondary/30 transition-colors">
-                  <CheckCircle className="w-5 h-5 text-secondary" />
+              <div key={index} className="flex items-start space-x-3 md:space-x-4 group p-2 md:p-3 rounded-xl hover:bg-gray-50 transition-colors duration-200">
+                <div className="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 bg-secondary/20 rounded-full flex items-center justify-center mt-1 group-hover:bg-secondary/30 transition-colors duration-300">
+                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-secondary" />
                 </div>
                 <div>
-                  <h4 className="font-bold mb-2 text-gray-900 group-hover:text-primary transition-colors">
+                  <h4 className="font-bold mb-1 md:mb-2 text-sm md:text-base text-gray-900 group-hover:text-primary transition-colors duration-300 leading-tight">
                     {item.title}
                   </h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
