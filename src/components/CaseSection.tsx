@@ -19,63 +19,34 @@ const CaseSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-12 gap-12 items-start">
-          {/* Main Content */}
+          {/* Main Content - Simplified */}
           <div className="lg:col-span-8">
             <div className="bg-white border border-gray-200 rounded-3xl p-8 lg:p-12 shadow-lg">
-              {/* Profile Header */}
-              <div className="flex flex-col md:flex-row items-start md:items-center gap-8 mb-12">
-                <div className="relative">
-                  <div className="w-32 h-32 bg-gradient-to-r from-primary to-secondary rounded-3xl flex items-center justify-center shadow-xl">
-                    <span className="text-4xl font-bold text-white">DS</span>
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-10 h-10 bg-secondary rounded-full flex items-center justify-center border-4 border-white shadow-lg">
-                    <Award className="w-5 h-5 text-white" />
-                  </div>
+              {/* Simple Profile */}
+              <div className="text-center mb-12">
+                <div className="w-24 h-24 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-white">DS</span>
                 </div>
+                <h3 className="text-2xl font-bold mb-2">Dr. Saulo Martins</h3>
+                <p className="text-gray-600 mb-6">Cirurgião Plástico • São Paulo</p>
                 
-                <div className="flex-1">
-                  <h3 className="text-3xl font-bold mb-3">Dr. Saulo Martins</h3>
-                  <p className="text-lg text-gray-600 mb-4">
-                    Cirurgião Plástico • CRM 123456-SP
-                  </p>
-                  
-                  <div className="flex items-center space-x-1 mb-6">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />
-                    ))}
-                    <span className="ml-3 text-gray-600 font-medium">5.0 • 847 avaliações</span>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-3">
-                    <div className="bg-secondary/10 border border-secondary/20 rounded-full px-4 py-2">
-                      <span className="text-secondary font-semibold text-sm">Referência Nacional</span>
-                    </div>
-                    <div className="bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
-                      <span className="text-primary font-semibold text-sm">+2M Seguidores</span>
-                    </div>
-                  </div>
+                <div className="flex items-center justify-center space-x-1 mb-8">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
+                  ))}
+                  <span className="ml-2 text-gray-600 text-sm">5.0 • 847 avaliações</span>
                 </div>
               </div>
               
-              {/* Quote */}
-              <div className="relative bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-8 mb-12 border border-gray-100">
-                <div className="text-6xl text-primary/20 font-serif absolute top-4 left-6">"</div>
-                <blockquote className="text-xl lg:text-2xl font-medium text-gray-900 leading-relaxed pl-8 pr-8">
-                  Em 9 meses, saí completamente dos convênios e multipliquei meu faturamento. 
-                  O método M.E.D.D. não apenas me deu pacientes, me deu autoridade real no mercado.
+              {/* Simple Quote */}
+              <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 text-center">
+                <blockquote className="text-xl font-medium text-gray-900 leading-relaxed mb-6">
+                  "Em 9 meses, saí completamente dos convênios e multipliquei meu faturamento. 
+                  O método M.E.D.D. me deu autoridade real no mercado."
                 </blockquote>
-                <div className="text-6xl text-primary/20 font-serif absolute bottom-4 right-6 rotate-180">"</div>
-              </div>
-              
-              {/* Timeline */}
-              <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <Calendar className="w-6 h-6 text-secondary" />
-                  <h4 className="text-lg font-bold text-gray-900">Timeline de Transformação</h4>
+                <div className="text-sm text-gray-600">
+                  <strong>Transformação:</strong> Janeiro 2024 - Setembro 2024
                 </div>
-                <p className="text-gray-700 font-medium">
-                  <strong>Período:</strong> Janeiro 2024 - Setembro 2024 (9 meses de implementação)
-                </p>
               </div>
             </div>
           </div>

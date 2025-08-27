@@ -81,7 +81,7 @@ const ContactSection = () => {
           <div className="relative bg-white border-2 border-gray-200 rounded-3xl p-8 lg:p-12 shadow-2xl">
             <div className="text-center mb-10">
               <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-900">
-                Solicite Sua Análise Personalizada
+                Agende uma reunião agora e sai na frente dos seus concorrentes
               </h3>
               <p className="text-gray-600 text-lg">
                 Preencha os dados abaixo e receba sua análise em até 24h

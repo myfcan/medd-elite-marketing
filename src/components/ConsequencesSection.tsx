@@ -12,10 +12,49 @@ const ConsequencesSection = () => {
               os próximos 5 anos
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            As mudanças no mercado médico estão acontecendo rapidamente. 
-            Quem não se adaptar ficará para trás.
-          </p>
+        </div>
+
+        {/* Visual Timeline */}
+        <div className="relative mb-20">
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-red-200 via-yellow-200 to-green-200"></div>
+          
+          <div className="space-y-16">
+            {/* 2024 - Critical Point */}
+            <div className="flex items-center">
+              <div className="flex-1 text-right pr-8">
+                <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6">
+                  <h3 className="text-xl font-bold text-red-600 mb-3">2024 - Ponto Crítico</h3>
+                  <p className="text-gray-700">Saturação do mercado médico e redução drástica dos repasses</p>
+                </div>
+              </div>
+              <div className="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+              <div className="flex-1 pl-8"></div>
+            </div>
+
+            {/* 2026 - Adaptation */}
+            <div className="flex items-center">
+              <div className="flex-1 pr-8"></div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+              <div className="flex-1 text-left pl-8">
+                <div className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-6">
+                  <h3 className="text-xl font-bold text-yellow-600 mb-3">2026 - Adaptação Forçada</h3>
+                  <p className="text-gray-700">Médicos são obrigados a buscar alternativas aos convênios</p>
+                </div>
+              </div>
+            </div>
+
+            {/* 2029 - New Leaders */}
+            <div className="flex items-center">
+              <div className="flex-1 text-right pr-8">
+                <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-6">
+                  <h3 className="text-xl font-bold text-green-600 mb-3">2029 - Novos Líderes</h3>
+                  <p className="text-gray-700">Médicos com autoridade digital dominam o mercado particular</p>
+                </div>
+              </div>
+              <div className="w-8 h-8 bg-green-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+              <div className="flex-1 pl-8"></div>
+            </div>
+          </div>
         </div>
 
         {/* Three Column Layout */}
@@ -96,19 +135,6 @@ const ConsequencesSection = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="bg-white rounded-3xl p-12 text-center shadow-xl border border-gray-200">
-          <div className="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-8">
-            <Target className="w-10 h-10 text-white" />
-          </div>
-          <h3 className="text-3xl font-bold text-gray-900 mb-6">
-            Não seja mais uma estatística
-          </h3>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Médicos que desenvolvem autoridade digital e sistemas de atração próprios 
-            se tornam líderes de mercado, independentes das mudanças externas.
-          </p>
-        </div>
       </div>
     </section>
   );

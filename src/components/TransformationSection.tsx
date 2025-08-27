@@ -30,81 +30,125 @@ const TransformationSection = () => {
               ter um sistema e não ter
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Veja a transformação real que acontece quando você implementa 
-            uma estratégia estruturada de crescimento.
-          </p>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-12 items-center mb-20">
-          {/* Before */}
-          <div className="lg:col-span-5">
-            <div className="bg-gray-50 border border-gray-200 rounded-3xl p-8">
-              <div className="flex items-center justify-center mb-8">
-                <div className="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center">
-                  <X className="w-8 h-8 text-gray-500" />
-                </div>
-              </div>
-              
-              <h3 className="text-2xl font-bold text-gray-600 mb-8 text-center">
-                Situação Atual
-              </h3>
-              
-              <div className="space-y-6">
-                {beforeItems.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mt-1">
-                      <X className="w-4 h-4 text-red-500" />
-                    </div>
-                    <span className="text-gray-600 font-medium">{item}</span>
-                  </div>
-                ))}
-              </div>
+        {/* Visual Comparison */}
+        <div className="relative mb-20">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="grid grid-cols-20 h-full">
+              {[...Array(400)].map((_, i) => (
+                <div key={i} className="border border-gray-300"></div>
+              ))}
             </div>
           </div>
 
-          {/* Arrow */}
-          <div className="lg:col-span-2 flex justify-center">
-            <div className="flex flex-col items-center space-y-4">
-              <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-lg animate-pulse">
-                <ArrowRight className="w-8 h-8 text-white" />
-              </div>
+          <div className="relative grid lg:grid-cols-2 gap-16 items-center">
+            {/* Before - Visual */}
+            <div className="space-y-8">
               <div className="text-center">
-                <div className="flex items-center space-x-1 text-primary font-bold text-sm">
-                  <Sparkles className="w-4 h-4" />
-                  <span>TRANSFORMAÇÃO</span>
+                <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <X className="w-10 h-10 text-red-500" />
                 </div>
-                <p className="text-xs text-gray-500 mt-1">Com M.E.D.D.</p>
+                <h3 className="text-3xl font-bold text-gray-700 mb-8">Sem Sistema</h3>
+              </div>
+              
+              {/* Visual Problems */}
+              <div className="space-y-6">
+                <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-2xl">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">📉</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-red-700">Renda Imprevisível</div>
+                      <div className="text-sm text-red-600">Dependente de fatores externos</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-2xl">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">⏰</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-red-700">Agenda Vazia</div>
+                      <div className="text-sm text-red-600">Esperando indicações chegarem</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-2xl">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">💸</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-red-700">Preços Baixos</div>
+                      <div className="text-sm text-red-600">Competindo por convênios</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* After - Visual */}
+            <div className="space-y-8">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Sparkles className="w-10 h-10 text-white" />
+                </div>
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-8">
+                  Com M.E.D.D.
+                </h3>
+              </div>
+              
+              {/* Visual Solutions */}
+              <div className="space-y-6">
+                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary p-6 rounded-r-2xl">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">📈</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-primary">Renda Previsível</div>
+                      <div className="text-sm text-gray-600">Sistema automatizado de atração</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary p-6 rounded-r-2xl">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">📅</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-primary">Agenda Lotada</div>
+                      <div className="text-sm text-gray-600">Fluxo constante de pacientes</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary p-6 rounded-r-2xl">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">💎</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-primary">Preços Premium</div>
+                      <div className="text-sm text-gray-600">Autoridade reconhecida no mercado</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* After */}
-          <div className="lg:col-span-5">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl"></div>
-              <div className="relative bg-gradient-to-r from-primary to-secondary text-white rounded-3xl p-8">
-                <div className="flex items-center justify-center mb-8">
-                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-                    <Sparkles className="w-8 h-8 text-white" />
-                  </div>
-                </div>
-                
-                <h3 className="text-2xl font-bold mb-8 text-center">
-                  Situação Transformada
-                </h3>
-                
-                <div className="space-y-6">
-                  {afterItems.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mt-1">
-                        <Check className="w-4 h-4 text-white" />
-                      </div>
-                      <span className="font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+          {/* Center Arrow */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+            <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-2xl animate-pulse">
+              <ArrowRight className="w-8 h-8 text-white" />
             </div>
           </div>
         </div>

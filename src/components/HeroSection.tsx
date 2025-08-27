@@ -28,9 +28,9 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-              Lote sua agenda com{" "}
+              Lote sua agenda com pacientes particulares com o{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                pacientes premium
+                M.E.D.D.
               </span>
             </h1>
             
@@ -91,7 +91,7 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <div className="relative">
               {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              <div className="absolute -top-8 -right-12 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
                     <CheckCircle className="w-6 h-6 text-white" />
@@ -103,7 +103,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
+              <div className="absolute -bottom-8 -left-12 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-lg">R$</span>
@@ -133,19 +133,19 @@ const HeroSection = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-gray-900 mb-2">+500</div>
-              <div className="text-gray-600">Médicos Transformados</div>
+              <div className="text-gray-600">Médicos Transformados COM MEDD</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">300%</div>
-              <div className="text-gray-600">Aumento Médio</div>
+              <div className="text-4xl font-bold text-gray-900 mb-2">200%</div>
+              <div className="text-gray-600">De Aumento No valor da consulta em 60 dias</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">90</div>
-              <div className="text-gray-600">Dias para Resultados</div>
+              <div className="text-4xl font-bold text-gray-900 mb-2">3X</div>
+              <div className="text-gray-600">Aumento no faturamento em até 9 meses</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-gray-900 mb-2">87%</div>
-              <div className="text-gray-600">Menos Convênios</div>
+              <div className="text-gray-600">Menos dependência de Convênios</div>
             </div>
           </div>
         </div>
