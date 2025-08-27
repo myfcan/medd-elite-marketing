@@ -53,7 +53,7 @@ const MethodologySection = () => {
   ];
 
   return (
-    <section id="metodologia" className="pt-24 md:pt-28 lg:pt-32 pb-16 md:pb-20 lg:pb-24 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <section id="metodologia" className="pt-32 md:pt-36 lg:pt-40 pb-16 md:pb-20 lg:pb-24 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
       {/* Background Elements - Responsive positioning */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-10 md:top-20 left-4 md:left-10 w-32 md:w-64 h-32 md:h-64 bg-primary/10 rounded-full blur-3xl opacity-30"></div>
