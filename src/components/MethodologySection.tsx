@@ -3,21 +3,21 @@ import { Award, Target, Zap, CheckCircle, Users, Code, TrendingUp } from 'lucide
 const MethodologySection = () => {
   return (
     <section id="metodologia" className="py-12 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-14">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-8 shadow-lg">
             <span className="text-2xl font-bold text-white">M.E.D.D</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
             Metodologia{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               M.E.D.D.
             </span>
           </h2>
           
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto font-medium leading-relaxed mb-8">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto font-medium leading-relaxed mb-8">
             Um sistema completo e integrado desenvolvido especificamente para médicos 
             que desejam construir autoridade digital e fluxo previsível de pacientes particulares.
           </p>
@@ -31,14 +31,14 @@ const MethodologySection = () => {
         </div>
 
         {/* 3 Pilares */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-14">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-14">
           {/* Pilar 1 */}
-          <div className="group bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+          <div className="group bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="w-20 h-20 bg-gradient-to-r from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform">
               <Award className="w-10 h-10 text-white" />
             </div>
             
-            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 text-center">
               ARQUITETURA DE AUTORIDADE
             </h3>
             
@@ -69,12 +69,12 @@ const MethodologySection = () => {
           </div>
 
           {/* Pilar 2 */}
-          <div className="group bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+          <div className="group bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="w-20 h-20 bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform">
               <Target className="w-10 h-10 text-white" />
             </div>
             
-            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 text-center">
               SISTEMA DE ATRAÇÃO SELETIVA
             </h3>
             
@@ -105,12 +105,12 @@ const MethodologySection = () => {
           </div>
 
           {/* Pilar 3 */}
-          <div className="group bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+          <div className="group bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="w-20 h-20 bg-gradient-to-r from-gray-700 to-gray-600 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform">
               <Zap className="w-10 h-10 text-white" />
             </div>
             
-            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 text-center">
               AUTOMAÇÃO INTELIGENTE COM GENIUMED
             </h3>
             
@@ -144,12 +144,12 @@ const MethodologySection = () => {
         {/* Integration Center */}
         <div className="relative mb-14">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl"></div>
-          <div className="relative bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-center text-white shadow-2xl">
+          <div className="relative bg-gradient-to-r from-primary to-secondary rounded-3xl p-8 sm:p-12 text-center text-white shadow-2xl">
             <div className="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
               <Zap className="w-12 h-12" />
             </div>
-            <h4 className="text-3xl lg:text-4xl font-bold mb-6">INTEGRAÇÃO SISTÊMICA</h4>
-            <p className="text-xl font-medium max-w-4xl mx-auto leading-relaxed opacity-95">
+            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">INTEGRAÇÃO SISTÊMICA</h4>
+            <p className="text-lg sm:text-xl font-medium max-w-4xl mx-auto leading-relaxed opacity-95">
               Os 3 pilares trabalham em perfeita sinergia para criar um ecossistema completo 
               de crescimento sustentável, previsível e escalável para sua prática médica.
             </p>
@@ -157,13 +157,13 @@ const MethodologySection = () => {
         </div>
 
         {/* Vantagens */}
-        <div className="bg-white border border-gray-200 rounded-3xl p-12 shadow-lg">
-          <h3 className="text-3xl font-bold text-center mb-12">
+        <div className="bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
             Vantagens Exclusivas do Sistema{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">M.E.D.D.</span>
           </h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
                 title: "Saia da dependência dos convênios",

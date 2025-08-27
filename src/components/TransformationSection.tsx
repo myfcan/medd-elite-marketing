@@ -26,16 +26,16 @@ const TransformationSection = () => {
       <div className="absolute top-20 left-10 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-14 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 leading-tight">
             A diferença entre{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               ter um sistema e não ter
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Veja a transformação que acontece quando você implementa o método M.E.D.D.
           </p>
         </div>

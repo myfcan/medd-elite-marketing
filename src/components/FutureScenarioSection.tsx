@@ -8,21 +8,21 @@ const FutureScenarioSection = () => {
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60"></div>
       <div className="absolute bottom-20 left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl opacity-40"></div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 leading-tight">
             O cenário que se desenha para{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               os próximos 5 anos
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Entenda as tendências que estão moldando o futuro da medicina
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
           {/* Cenário Atual */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative group">

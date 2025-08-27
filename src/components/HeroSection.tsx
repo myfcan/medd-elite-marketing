@@ -16,8 +16,8 @@ const HeroSection = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-secondary/10 to-primary/10 rounded-full blur-3xl"></div>
       
-      <div className="relative max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[70vh]">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[60vh] sm:min-h-[70vh]">
           {/* Content */}
           <div className="animate-slide-up">
             {/* Badge */}
@@ -27,19 +27,19 @@ const HeroSection = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Lote sua agenda com pacientes particulares com o{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 M.E.D.D.
               </span>
             </h1>
             
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-lg">
+            <p className="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-12 leading-relaxed max-w-lg">
               Entre para os 3% da elite médica mais bem paga do Brasil com estratégias comprovadas de marketing médico ético
             </p>
 
             {/* Features */}
-            <div className="space-y-4 mb-12">
+            <div className="space-y-3 sm:space-y-4 mb-8 sm:mb-12">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-5 h-5 text-secondary" />
                 <span className="text-gray-700">Aumento médio de 300% no faturamento</span>
@@ -121,23 +121,23 @@ const HeroSection = () => {
 
         {/* Stats Section */}
         <div className="mt-16 pt-12 border-t border-gray-200">
-          <p className="text-center text-gray-500 mb-12 text-xl">Resultados comprovados de nossos clientes</p>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <p className="text-center text-gray-500 mb-8 sm:mb-12 text-lg sm:text-xl">Resultados comprovados de nossos clientes</p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">+500</div>
-              <div className="text-gray-600">Médicos Transformados COM MEDD</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">+500</div>
+              <div className="text-gray-600 text-sm sm:text-base">Médicos Transformados COM MEDD</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">200%</div>
-              <div className="text-gray-600">De Aumento No valor da consulta em 60 dias</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">200%</div>
+              <div className="text-gray-600 text-sm sm:text-base">De Aumento No valor da consulta em 60 dias</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">3X</div>
-              <div className="text-gray-600">Aumento no faturamento em até 9 meses</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">3X</div>
+              <div className="text-gray-600 text-sm sm:text-base">Aumento no faturamento em até 9 meses</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">87%</div>
-              <div className="text-gray-600">Menos dependência de Convênios</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">87%</div>
+              <div className="text-gray-600 text-sm sm:text-base">Menos dependência de Convênios</div>
             </div>
           </div>
         </div>

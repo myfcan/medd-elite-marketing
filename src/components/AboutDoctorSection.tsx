@@ -17,10 +17,10 @@ const AboutDoctorSection = () => {
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60"></div>
       <div className="absolute bottom-20 left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl opacity-40"></div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-14 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 leading-tight">
             A{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               transformação com M.E.D.D.
