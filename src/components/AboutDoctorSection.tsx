@@ -93,8 +93,8 @@ const AboutDoctorSection = () => {
                   {/* Quick Stats */}
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-primary/10 rounded-xl p-4 text-center">
-                      <div className="text-2xl font-bold text-primary">700% no valor a Consulta</div>
-                      <div className="text-sm text-muted-foreground">Valor Consulta subiu para R$2.500,00</div>
+                      <div className="text-2xl font-bold text-primary">Um aumento de 700% no valor a Consulta</div>
+                      <div className="text-sm text-muted-foreground">Valor Consulta da: R$2.500,00</div>
                     </div>
                     <div className="bg-secondary/10 rounded-xl p-4 text-center">
                       <div className="text-2xl font-bold text-secondary">5X Aumento de receita</div>

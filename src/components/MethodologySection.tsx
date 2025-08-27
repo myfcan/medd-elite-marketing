@@ -62,8 +62,8 @@ const MethodologySection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header - Enhanced responsive typography */}
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-6 md:mb-8 shadow-lg animate-fade-in">
-            <span className="text-lg md:text-2xl font-bold text-white">M.E.D.D</span>
+          <div className="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-gradient-to-r from-primary to-secondary rounded-2xl md:rounded-3xl mb-6 md:mb-8 shadow-lg animate-fade-in">
+            <span className="text-xl md:text-2xl lg:text-3xl font-bold text-white">M.E.D.D</span>
           </div>
           
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 md:mb-6 lg:mb-8 leading-tight">
