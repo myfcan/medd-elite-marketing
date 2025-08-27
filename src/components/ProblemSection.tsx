@@ -70,11 +70,11 @@ const ProblemSection = () => {
             
             {/* Floating elements around the circle */}
             <div className="absolute -top-8 -right-8 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center animate-bounce" style={{animationDelay: '0.5s', animationDuration: '3s'}}>
-              <span className="text-red-500 font-bold text-sm">📉</span>
+              <span className="text-primary font-bold text-sm">📉</span>
             </div>
             
             <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center animate-bounce" style={{animationDelay: '1s', animationDuration: '2.5s'}}>
-              <span className="text-red-500 font-bold text-xs">💼</span>
+              <span className="text-primary font-bold text-xs">💼</span>
             </div>
           </div>
           
