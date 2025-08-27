@@ -58,17 +58,6 @@ const AboutDoctorSection = () => {
 
                 {/* Right Column - Info */}
                 <div className="space-y-6">
-                  {/* Quick Stats - Moved to top of right column */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-primary/10 rounded-xl p-4 text-center">
-                      <div className="text-2xl font-bold text-primary">700%</div>
-                      <div className="text-sm text-muted-foreground">Valor Consulta subiu para R$2.500,00</div>
-                    </div>
-                    <div className="bg-secondary/10 rounded-xl p-4 text-center">
-                      <div className="text-2xl font-bold text-secondary">5X</div>
-                      <div className="text-sm text-muted-foreground">Seu faturamento aumentou 5X após o MEED</div>
-                    </div>
-                  </div>
                   {/* DoutorTontura */}
                   <div>
                     <div className="flex items-center gap-3 mb-4">
@@ -99,6 +88,18 @@ const AboutDoctorSection = () => {
                     <p className="text-xs text-muted-foreground text-right">
                       <strong>Resultados obtidos em 9 meses de aplicação da metodologia</strong>
                     </p>
+                  </div>
+
+                  {/* Quick Stats - Below testimonial */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-primary/10 rounded-xl p-4 text-center">
+                      <div className="text-2xl font-bold text-primary">700%</div>
+                      <div className="text-sm text-muted-foreground">Valor Consulta subiu para R$2.500,00</div>
+                    </div>
+                    <div className="bg-secondary/10 rounded-xl p-4 text-center">
+                      <div className="text-2xl font-bold text-secondary">5X</div>
+                      <div className="text-sm text-muted-foreground">Seu faturamento aumentou 5X após o MEED</div>
+                    </div>
                   </div>
 
                   {/* CTA Button */}
