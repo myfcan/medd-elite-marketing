@@ -129,7 +129,7 @@ const HeroSection = () => {
 
         {/* Stats Section */}
         <div className="mt-20 pt-16 border-t border-gray-200">
-          <p className="text-center text-gray-500 mb-12">Resultados comprovados de nossos clientes</p>
+          <p className="text-center text-gray-500 mb-12 text-xl">Resultados comprovados de nossos clientes</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-gray-900 mb-2">+500</div>
