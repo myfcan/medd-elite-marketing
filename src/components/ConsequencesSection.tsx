@@ -144,26 +144,6 @@ const ConsequencesSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Bottom CTA section */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-primary/20 shadow-xl">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-                <Clock className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="text-2xl font-bold text-foreground">O momento é agora</h4>
-            </div>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Enquanto 87% dos médicos ainda dependem exclusivamente de convênios, 
-              <strong className="text-primary"> os que investem em sistemas estruturados</strong> estão construindo consultórios prósperos e sustentáveis.
-            </p>
-            <div className="inline-flex items-center gap-2 text-primary font-semibold">
-              <span>Qual lado você escolhe?</span>
-              <ArrowRight className="w-5 h-5" />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
