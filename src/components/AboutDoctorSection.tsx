@@ -55,10 +55,6 @@ const AboutDoctorSection = () => {
                     alt="Dr. Saulo Nader - Neurologista e caso de sucesso do Método M.E.D.D."
                     className="w-full h-[600px] object-cover rounded-2xl shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5"
                   />
-                  {/* Badge */}
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    R$ 20Mi/mês
-                  </div>
                   
                   {/* Name and Title */}
                   <div className="mt-6 text-center">
