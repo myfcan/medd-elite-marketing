@@ -91,18 +91,18 @@ const ConsequencesSection = () => {
                 <div className="space-y-8">
                   {[
                     { 
-                      label: "Medicina Particular", 
-                      value: "45%", 
+                      label: "+45% de crescimento anual", 
+                      value: "", 
                       trend: "up", 
-                      description: "Crescimento anual",
+                      description: "A procura por médicos de qualidade no particular está aumentando rapidamente",
                       icon: ArrowUp,
                       gradient: "from-green-400 to-emerald-500"
                     },
                     { 
-                      label: "Repasses Convênios", 
-                      value: "23%", 
+                      label: "–23% de repasse contínuo", 
+                      value: "", 
                       trend: "down", 
-                      description: "Redução contínua",
+                      description: "Os convênios estão pagando cada vez menos para os médicos",
                       icon: ArrowDown,
                       gradient: "from-red-400 to-orange-500"
                     }
