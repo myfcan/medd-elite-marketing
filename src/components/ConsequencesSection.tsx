@@ -14,49 +14,6 @@ const ConsequencesSection = () => {
           </h2>
         </div>
 
-        {/* Visual Timeline */}
-        <div className="relative mb-20">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-red-200 via-yellow-200 to-green-200"></div>
-          
-          <div className="space-y-16">
-            {/* 2024 - Critical Point */}
-            <div className="flex items-center">
-              <div className="flex-1 text-right pr-8">
-                <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6">
-                  <h3 className="text-xl font-bold text-red-600 mb-3">2024 - Ponto Crítico</h3>
-                  <p className="text-gray-700">Saturação do mercado médico e redução drástica dos repasses</p>
-                </div>
-              </div>
-              <div className="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-              <div className="flex-1 pl-8"></div>
-            </div>
-
-            {/* 2026 - Adaptation */}
-            <div className="flex items-center">
-              <div className="flex-1 pr-8"></div>
-              <div className="w-8 h-8 bg-yellow-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-              <div className="flex-1 text-left pl-8">
-                <div className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-6">
-                  <h3 className="text-xl font-bold text-yellow-600 mb-3">2026 - Adaptação Forçada</h3>
-                  <p className="text-gray-700">Médicos são obrigados a buscar alternativas aos convênios</p>
-                </div>
-              </div>
-            </div>
-
-            {/* 2029 - New Leaders */}
-            <div className="flex items-center">
-              <div className="flex-1 text-right pr-8">
-                <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-6">
-                  <h3 className="text-xl font-bold text-green-600 mb-3">2029 - Novos Líderes</h3>
-                  <p className="text-gray-700">Médicos com autoridade digital dominam o mercado particular</p>
-                </div>
-              </div>
-              <div className="w-8 h-8 bg-green-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-              <div className="flex-1 pl-8"></div>
-            </div>
-          </div>
-        </div>
-
         {/* Three Column Layout */}
         <div className="grid lg:grid-cols-3 gap-8 mb-20">
           {/* Current Scenario */}
