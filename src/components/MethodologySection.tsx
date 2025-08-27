@@ -111,7 +111,7 @@ const MethodologySection = () => {
             </div>
             
             <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-              AUTOMAÇÃO INTELIGENTE
+              AUTOMAÇÃO INTELIGENTE COM GENIUMED
             </h3>
             
             <p className="text-gray-700 text-center mb-8 font-semibold">
