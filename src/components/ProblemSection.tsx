@@ -56,10 +56,10 @@ const ProblemSection = () => {
           {/* Floating Circle */}
           <div className="relative">
             {/* Background gradient circle */}
-            <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/30 rounded-full blur-2xl scale-110 animate-pulse"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/30 rounded-full blur-2xl scale-110 animate-pulse"></div>
             
             {/* Main circle */}
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex flex-col items-center justify-center text-center shadow-2xl transform hover:scale-105 transition-all duration-500">
+            <div className="relative w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-primary to-primary/80 rounded-full flex flex-col items-center justify-center text-center shadow-2xl transform hover:scale-105 transition-all duration-500">
               <div className="text-6xl lg:text-7xl font-bold text-white mb-4">
                 87%
               </div>
