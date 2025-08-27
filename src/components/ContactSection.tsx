@@ -35,12 +35,6 @@ const ContactSection = () => {
             <Sparkles className="w-10 h-10 text-white" />
           </div>
           
-          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-            Entre em contato agora e{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              comece hoje seu crescimento com o M.E.D.D.
-            </span>
-          </h2>
           
           
         </div>
