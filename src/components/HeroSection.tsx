@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 import doctorHero from '@/assets/doctor-hero.jpg';
 
 const HeroSection = () => {
@@ -56,23 +56,15 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button 
-                onClick={scrollToForm}
-                size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
-              >
-                Quero Lotar Minha Agenda
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="px-8 py-4 text-lg font-semibold rounded-full border-2 hover:bg-gray-50 group"
-              >
-                <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-                Ver Demo
-              </Button>
-            </div>
+               <Button 
+                 onClick={scrollToForm}
+                 size="lg" 
+                 className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+               >
+                 Quero Lotar Minha Agenda
+                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+               </Button>
+             </div>
 
             {/* Social Proof */}
             <div className="flex items-center space-x-8 text-sm text-gray-600">
