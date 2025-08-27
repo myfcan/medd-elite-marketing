@@ -1,61 +1,91 @@
-import { UserX, TrendingDown, AlertTriangle } from 'lucide-react';
+import { UserX, TrendingDown, AlertTriangle, BarChart3 } from 'lucide-react';
 
 const ProblemSection = () => {
   return (
-    <section id="sobre" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="flex justify-center mb-6">
-            <div className="p-4 bg-primary rounded-full">
-              <UserX className="w-8 h-8 text-primary-foreground" />
-            </div>
+    <section id="sobre" className="py-32 bg-muted/30">
+      <div className="container mx-auto px-4 lg:px-6">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-destructive/10 rounded-2xl mb-8">
+            <UserX className="w-8 h-8 text-destructive" />
           </div>
-          <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-            Por Que Médicos Competentes Continuam Dependentes de Convênios
+          <h2 className="text-4xl lg:text-5xl font-bold font-serif text-foreground mb-8 leading-tight">
+            Por Que Médicos Competentes <br />
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Continuam Dependentes de Convênios
+            </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto font-medium leading-relaxed">
             Mesmo com excelência técnica, a maioria dos médicos não consegue construir 
             autoridade suficiente para atrair pacientes particulares consistentemente.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="text-center p-6 bg-card rounded-xl shadow-sm">
-            <div className="flex justify-center mb-4">
-              <TrendingDown className="w-12 h-12 text-destructive" />
+        {/* Problem Cards */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="group relative bg-card border border-border/50 rounded-3xl p-8 hover:shadow-card transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-destructive/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="flex justify-center mb-6">
+                <div className="w-14 h-14 bg-destructive/10 rounded-2xl flex items-center justify-center">
+                  <TrendingDown className="w-7 h-7 text-destructive" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-center">Ausência de Estratégia</h3>
+              <p className="text-muted-foreground text-center leading-relaxed">
+                Falta de marca pessoal estruturada para se destacar em um mercado cada vez mais competitivo
+              </p>
             </div>
-            <h3 className="text-lg font-semibold mb-3">Ausência de estratégia</h3>
-            <p className="text-muted-foreground">
-              Falta de marca pessoal estruturada para se destacar no mercado
-            </p>
           </div>
 
-          <div className="text-center p-6 bg-card rounded-xl shadow-sm">
-            <div className="flex justify-center mb-4">
-              <AlertTriangle className="w-12 h-12 text-destructive" />
+          <div className="group relative bg-card border border-border/50 rounded-3xl p-8 hover:shadow-card transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-destructive/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="flex justify-center mb-6">
+                <div className="w-14 h-14 bg-destructive/10 rounded-2xl flex items-center justify-center">
+                  <AlertTriangle className="w-7 h-7 text-destructive" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-center">Dependência de Indicações</h3>
+              <p className="text-muted-foreground text-center leading-relaxed">
+                Indicações não controladas limitam o crescimento sustentável da prática médica
+              </p>
             </div>
-            <h3 className="text-lg font-semibold mb-3">Dependência de indicações</h3>
-            <p className="text-muted-foreground">
-              Indicações não controladas limitam o crescimento sustentável
-            </p>
           </div>
 
-          <div className="text-center p-6 bg-card rounded-xl shadow-sm">
-            <div className="flex justify-center mb-4">
-              <UserX className="w-12 h-12 text-destructive" />
+          <div className="group relative bg-card border border-border/50 rounded-3xl p-8 hover:shadow-card transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-destructive/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="flex justify-center mb-6">
+                <div className="w-14 h-14 bg-destructive/10 rounded-2xl flex items-center justify-center">
+                  <BarChart3 className="w-7 h-7 text-destructive" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-center">Sistema de Atração</h3>
+              <p className="text-muted-foreground text-center leading-relaxed">
+                Ausência de sistema para atrair e converter pacientes premium consistentemente
+              </p>
             </div>
-            <h3 className="text-lg font-semibold mb-3">Sistema de atração</h3>
-            <p className="text-muted-foreground">
-              Ausência de sistema para atrair e converter pacientes premium
-            </p>
           </div>
         </div>
 
-        <div className="bg-secondary/10 border border-secondary/20 rounded-xl p-8 text-center">
-          <div className="text-5xl font-bold text-secondary mb-2">87%</div>
-          <p className="text-lg text-foreground font-medium">
-            dos médicos faturam menos de R$ 50k/mês por falta de posicionamento estratégico
-          </p>
+        {/* Key Statistic */}
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-3xl blur-xl"></div>
+          <div className="relative bg-card border-2 border-primary/20 rounded-3xl p-12 text-center">
+            <div className="mb-6">
+              <div className="text-6xl lg:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
+                87%
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                dos médicos faturam menos de R$ 50k/mês
+              </h3>
+              <p className="text-lg text-muted-foreground font-medium max-w-2xl mx-auto">
+                A falta de posicionamento estratégico é o principal fator que limita 
+                o potencial de crescimento da maioria dos profissionais médicos
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

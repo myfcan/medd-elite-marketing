@@ -1,89 +1,127 @@
-import { ArrowRight, X, Check } from 'lucide-react';
+import { ArrowRight, X, Check, Sparkles } from 'lucide-react';
 
 const TransformationSection = () => {
+  const beforeItems = [
+    'Agenda dependente de convênios',
+    'Renda imprevisível mês a mês',
+    'Pouco reconhecimento como especialista',
+    'Competição constante por preço',
+    'Dependência de indicações externas'
+  ];
+
+  const afterItems = [
+    'Fluxo constante de pacientes particulares',
+    'Receita previsível e crescente',
+    'Reconhecimento como autoridade na especialidade',
+    'Valorização do seu conhecimento',
+    'Sistema de atração automatizado',
+    'Independência completa dos convênios'
+  ];
+
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-            A Diferença Entre Ter um Sistema e Não Ter
+    <section className="py-32 bg-muted/30">
+      <div className="container mx-auto px-4 lg:px-6">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl lg:text-5xl font-bold font-serif text-foreground mb-8 leading-tight">
+            A Diferença Entre <br />
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Ter um Sistema e Não Ter
+            </span>
           </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Veja a transformação real que acontece quando você implementa 
+            uma estratégia estruturada de crescimento.
+          </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Antes */}
-          <div className="bg-muted p-8 rounded-xl">
-            <h3 className="text-2xl font-bold text-muted-foreground mb-6 text-center">
-              Situação Atual
-            </h3>
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <X className="w-6 h-6 text-destructive flex-shrink-0" />
-                <span className="text-muted-foreground">Agenda dependente de convênios</span>
+        <div className="grid lg:grid-cols-12 gap-12 items-center">
+          {/* Before */}
+          <div className="lg:col-span-5">
+            <div className="bg-muted border border-border/50 rounded-3xl p-8">
+              <div className="flex items-center justify-center mb-8">
+                <div className="w-16 h-16 bg-muted-foreground/10 rounded-full flex items-center justify-center">
+                  <X className="w-8 h-8 text-muted-foreground" />
+                </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <X className="w-6 h-6 text-destructive flex-shrink-0" />
-                <span className="text-muted-foreground">Renda imprevisível mês a mês</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <X className="w-6 h-6 text-destructive flex-shrink-0" />
-                <span className="text-muted-foreground">Pouco reconhecimento como especialista</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <X className="w-6 h-6 text-destructive flex-shrink-0" />
-                <span className="text-muted-foreground">Competição por preço</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <X className="w-6 h-6 text-destructive flex-shrink-0" />
-                <span className="text-muted-foreground">Dependência de indicações externas</span>
+              
+              <h3 className="text-2xl font-bold text-muted-foreground mb-8 text-center">
+                Situação Atual
+              </h3>
+              
+              <div className="space-y-6">
+                {beforeItems.map((item, index) => (
+                  <div key={index} className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-destructive/10 rounded-full flex items-center justify-center mt-1">
+                      <X className="w-4 h-4 text-destructive" />
+                    </div>
+                    <span className="text-muted-foreground font-medium">{item}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
           {/* Arrow */}
-          <div className="flex justify-center lg:justify-start">
-            <div className="flex flex-col items-center">
-              <ArrowRight className="w-12 h-12 text-secondary mb-4 animate-pulse" />
-              <span className="text-secondary font-semibold">TRANSFORMAÇÃO</span>
+          <div className="lg:col-span-2 flex justify-center">
+            <div className="flex flex-col items-center space-y-4">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center shadow-premium">
+                <ArrowRight className="w-8 h-8 text-primary-foreground animate-pulse" />
+              </div>
+              <div className="text-center">
+                <div className="flex items-center space-x-1 text-primary font-bold text-lg">
+                  <Sparkles className="w-5 h-5" />
+                  <span>TRANSFORMAÇÃO</span>
+                </div>
+                <p className="text-sm text-muted-foreground mt-1">Com M.E.D.D.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* After */}
+          <div className="lg:col-span-5">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-accent opacity-10 rounded-3xl blur-xl"></div>
+              <div className="relative bg-gradient-accent border-2 border-accent/30 rounded-3xl p-8 text-accent-foreground">
+                <div className="flex items-center justify-center mb-8">
+                  <div className="w-16 h-16 bg-accent-foreground/10 rounded-full flex items-center justify-center">
+                    <Sparkles className="w-8 h-8 text-accent-foreground" />
+                  </div>
+                </div>
+                
+                <h3 className="text-2xl font-bold mb-8 text-center">
+                  Situação Transformada
+                </h3>
+                
+                <div className="space-y-6">
+                  {afterItems.map((item, index) => (
+                    <div key={index} className="flex items-start space-x-4">
+                      <div className="flex-shrink-0 w-8 h-8 bg-accent-foreground/20 rounded-full flex items-center justify-center mt-1">
+                        <Check className="w-4 h-4 text-accent-foreground" />
+                      </div>
+                      <span className="font-medium">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-8">
-          {/* Depois */}
-          <div className="bg-gradient-secondary p-8 rounded-xl text-secondary-foreground">
-            <h3 className="text-2xl font-bold mb-6 text-center">
-              Situação Transformada
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-secondary-foreground flex-shrink-0" />
-                  <span>Fluxo constante de pacientes particulares</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-secondary-foreground flex-shrink-0" />
-                  <span>Receita previsível e crescente</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-secondary-foreground flex-shrink-0" />
-                  <span>Reconhecimento como autoridade na especialidade</span>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-secondary-foreground flex-shrink-0" />
-                  <span>Valorização do seu conhecimento</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-secondary-foreground flex-shrink-0" />
-                  <span>Sistema de atração automatizado</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-secondary-foreground flex-shrink-0" />
-                  <span>Independência completa dos convênios</span>
-                </div>
-              </div>
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <div className="bg-card border border-border/50 rounded-3xl p-8 max-w-4xl mx-auto">
+            <h4 className="text-2xl font-bold mb-4">Pronto Para Sua Transformação?</h4>
+            <p className="text-lg text-muted-foreground mb-6">
+              Descubra como centenas de médicos já fizeram essa mudança com nossa metodologia comprovada
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-gradient-primary hover:opacity-90 text-primary-foreground px-8 py-3 rounded-full font-semibold shadow-premium transition-all">
+                Ver Casos de Sucesso
+              </button>
+              <button className="border-2 border-border hover:bg-muted/50 px-8 py-3 rounded-full font-semibold transition-all">
+                Falar com Especialista
+              </button>
             </div>
           </div>
         </div>
