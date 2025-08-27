@@ -1,8 +1,8 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import ProblemSection from '@/components/ProblemSection';
-import ConsequencesSection from '@/components/ConsequencesSection';
 import TransformationSection from '@/components/TransformationSection';
+import AboutDoctorSection from '@/components/AboutDoctorSection';
 import MethodologySection from '@/components/MethodologySection';
 import CaseSection from '@/components/CaseSection';
 import ContactSection from '@/components/ContactSection';
@@ -15,8 +15,8 @@ const Index = () => {
       <main>
         <HeroSection />
         <ProblemSection />
-        <ConsequencesSection />
         <TransformationSection />
+        <AboutDoctorSection />
         <MethodologySection />
         <CaseSection />
         <ContactSection />
