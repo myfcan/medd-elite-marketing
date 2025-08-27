@@ -14,8 +14,8 @@ const ConsequencesSection = () => {
           </h2>
         </div>
 
-        {/* Three Column Layout */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
+        {/* Two Column Layout */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-20">
           {/* Current Scenario */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
             <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
@@ -65,28 +65,6 @@ const ConsequencesSection = () => {
                   <div className="text-3xl font-bold">↘️ 23%</div>
                   <p className="text-sm opacity-90">Redução contínua</p>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Future Impact */}
-          <div className="bg-white border-2 border-red-200 rounded-2xl p-8">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6">
-              <Clock className="w-7 h-7 text-red-500" />
-            </div>
-            <h3 className="text-xl font-bold text-red-600 mb-6">Impacto Futuro</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">Maior competitividade entre profissionais</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">Necessidade urgente de diferenciação</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">Pressão crescente por resultados</span>
               </div>
             </div>
           </div>
