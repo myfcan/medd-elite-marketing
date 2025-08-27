@@ -46,40 +46,24 @@ const MethodologySection = () => {
               "Ser reconhecido como referência na sua especialidade"
             </p>
             
-            <div className="space-y-4 mb-8">
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Arquitetura de marca pessoal profissional</span>
+            <div className="space-y-5 mb-8">
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-secondary/5 to-transparent rounded-xl border border-secondary/10">
+                <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-secondary" />
+                </div>
+                <span className="text-base text-gray-700 font-medium">Arquitetura de marca pessoal profissional</span>
               </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Posicionamento estratégico diferenciado</span>
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-secondary/5 to-transparent rounded-xl border border-secondary/10">
+                <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-secondary" />
+                </div>
+                <span className="text-base text-gray-700 font-medium">Posicionamento estratégico diferenciado</span>
               </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Comunicação de valor consistente</span>
-              </div>
-            </div>
-            
-            <div className="border-t border-gray-100 pt-6">
-              <h4 className="font-bold mb-3 text-primary text-sm">EQUIPE DEDICADA:</h4>
-              <div className="grid grid-cols-2 gap-2 text-xs text-gray-500">
-                <div className="flex items-center space-x-1">
-                  <Users className="w-3 h-3" />
-                  <span>Estrategista de Marca</span>
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-secondary/5 to-transparent rounded-xl border border-secondary/10">
+                <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-secondary" />
                 </div>
-                <div className="flex items-center space-x-1">
-                  <Users className="w-3 h-3" />
-                  <span>Designer Especializado</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <Users className="w-3 h-3" />
-                  <span>Social Media Médico</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <Users className="w-3 h-3" />
-                  <span>Copywriter Médico</span>
-                </div>
+                <span className="text-base text-gray-700 font-medium">Comunicação de valor consistente</span>
               </div>
             </div>
           </div>
@@ -98,40 +82,24 @@ const MethodologySection = () => {
               "Atraindo pacientes certos, não curiosos de convênio"
             </p>
             
-            <div className="space-y-4 mb-8">
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Conteúdo estratégico (posts, stories, roteiros)</span>
+            <div className="space-y-5 mb-8">
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-primary/5 to-transparent rounded-xl border border-primary/10">
+                <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                </div>
+                <span className="text-base text-gray-700 font-medium">Conteúdo estratégico (posts, stories, roteiros)</span>
               </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Funil validado de atração e conversão</span>
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-primary/5 to-transparent rounded-xl border border-primary/10">
+                <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                </div>
+                <span className="text-base text-gray-700 font-medium">Funil validado de atração e conversão</span>
               </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Tráfego pago como acelerador</span>
-              </div>
-            </div>
-            
-            <div className="border-t border-gray-100 pt-6">
-              <h4 className="font-bold mb-3 text-secondary text-sm">EQUIPE DEDICADA:</h4>
-              <div className="grid grid-cols-2 gap-2 text-xs text-gray-500">
-                <div className="flex items-center space-x-1">
-                  <Code className="w-3 h-3" />
-                  <span>Desenvolvedor Web</span>
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-primary/5 to-transparent rounded-xl border border-primary/10">
+                <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-primary" />
                 </div>
-                <div className="flex items-center space-x-1">
-                  <TrendingUp className="w-3 h-3" />
-                  <span>Gestor de Tráfego</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <Users className="w-3 h-3" />
-                  <span>Consultor Estratégico</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <Target className="w-3 h-3" />
-                  <span>Analista Performance</span>
-                </div>
+                <span className="text-base text-gray-700 font-medium">Tráfego pago como acelerador</span>
               </div>
             </div>
           </div>
@@ -150,40 +118,24 @@ const MethodologySection = () => {
               "Sistema que trabalha 24h gerando previsibilidade"
             </p>
             
-            <div className="space-y-4 mb-8">
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Qualificação de leads via IA</span>
+            <div className="space-y-5 mb-8">
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-gray-100/80 to-transparent rounded-xl border border-gray-200">
+                <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-gray-600" />
+                </div>
+                <span className="text-base text-gray-700 font-medium">Qualificação de leads via IA</span>
               </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Engajamento inteligente 24/7</span>
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-gray-100/80 to-transparent rounded-xl border border-gray-200">
+                <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-gray-600" />
+                </div>
+                <span className="text-base text-gray-700 font-medium">Engajamento inteligente 24/7</span>
               </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-600">Pós-consulta automatizado para fidelização</span>
-              </div>
-            </div>
-            
-            <div className="border-t border-gray-100 pt-6">
-              <h4 className="font-bold mb-3 text-gray-700 text-sm">EQUIPE DEDICADA:</h4>
-              <div className="grid grid-cols-2 gap-2 text-xs text-gray-500">
-                <div className="flex items-center space-x-1">
-                  <Zap className="w-3 h-3" />
-                  <span>Especialista em IA</span>
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-gray-100/80 to-transparent rounded-xl border border-gray-200">
+                <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-gray-600" />
                 </div>
-                <div className="flex items-center space-x-1">
-                  <TrendingUp className="w-3 h-3" />
-                  <span>Analista de Dados</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <Target className="w-3 h-3" />
-                  <span>Dashboard Analítico</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <Users className="w-3 h-3" />
-                  <span>Suporte Técnico</span>
-                </div>
+                <span className="text-base text-gray-700 font-medium">Pós-consulta automatizado para fidelização</span>
               </div>
             </div>
           </div>
