@@ -56,8 +56,8 @@ const AboutDoctorSection = () => {
                   />
                 </div>
 
-                {/* Right Column - Info */}
-                <div className="space-y-6">
+                {/* Right Column - Info - Full height aligned */}
+                <div className="flex flex-col justify-between h-full min-h-[600px] space-y-6">
                   {/* DoutorTontura */}
                   <div>
                     <div className="flex items-center gap-3 mb-4">
@@ -67,13 +67,13 @@ const AboutDoctorSection = () => {
                       <h4 className="text-xl font-bold text-foreground">DoutorTontura</h4>
                     </div>
                     
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-muted-foreground leading-relaxed">
                       Sou Dr. Saulo Nader, neurologista pela USP, médico pela FAMEMA, apresentado como Dr. Tontura em minhas diversas aparições em programas.
                     </p>
                   </div>
 
                   {/* Depoimento */}
-                  <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-6 border border-primary/10">
+                  <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-6 border border-primary/10 flex-grow">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-6 h-6 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                         <Star className="w-3 h-3 text-white" />
@@ -81,7 +81,7 @@ const AboutDoctorSection = () => {
                       <h4 className="text-lg font-bold text-foreground">Depoimento</h4>
                     </div>
                     
-                    <blockquote className="text-muted-foreground italic leading-relaxed border-l-4 border-primary pl-4 mb-3">
+                    <blockquote className="text-muted-foreground italic leading-relaxed border-l-4 border-primary pl-4 mb-6">
                       "Em 9 meses, saí completamente dos convênios e multipliquei meu faturamento. O método M.E.D.D. não apenas me deu pacientes, me deu autoridade real no mercado."
                     </blockquote>
                     
@@ -90,7 +90,7 @@ const AboutDoctorSection = () => {
                     </p>
                   </div>
 
-                  {/* Quick Stats - Below testimonial */}
+                  {/* Quick Stats */}
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-primary/10 rounded-xl p-4 text-center">
                       <div className="text-2xl font-bold text-primary">700%</div>
