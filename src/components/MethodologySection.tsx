@@ -1,11 +1,58 @@
-import { Award, Target, Zap, CheckCircle, Users, Code, TrendingUp } from 'lucide-react';
+import { Award, Target, Zap, CheckCircle, ArrowRight, TrendingUp } from 'lucide-react';
 
 const MethodologySection = () => {
+  const pillars = [
+    {
+      number: 1,
+      icon: Award,
+      title: "Arquitetura de Autoridade",
+      subtitle: "Ser reconhecido como referência na sua especialidade",
+      gradient: "from-primary to-primary/80",
+      color: "secondary",
+      features: [
+        "Arquitetura de marca pessoal profissional",
+        "Posicionamento estratégico diferenciado", 
+        "Comunicação de valor consistente"
+      ]
+    },
+    {
+      number: 2,
+      icon: Target,
+      title: "Sistema de Atração Seletiva",
+      subtitle: "Atraindo pacientes certos, não curiosos de convênio",
+      gradient: "from-secondary to-secondary/80",
+      color: "primary",
+      features: [
+        "Conteúdo estratégico (posts, stories, roteiros)",
+        "Funil validado de atração e conversão",
+        "Tráfego pago como acelerador"
+      ]
+    },
+    {
+      number: 3,
+      icon: Zap,
+      title: "Automação Inteligente com Geniumed",
+      subtitle: "Sistema que trabalha 24h gerando previsibilidade",
+      gradient: "from-gray-700 to-gray-600",
+      color: "gray-600",
+      features: [
+        "Qualificação de leads via IA",
+        "Engajamento inteligente 24/7",
+        "Pós-consulta automatizado para fidelização"
+      ]
+    }
+  ];
+
   return (
-    <section id="metodologia" className="py-12 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section id="metodologia" className="py-12 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute bottom-20 right-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl opacity-20"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-8 shadow-lg">
             <span className="text-2xl font-bold text-white">M.E.D.D</span>
           </div>
@@ -30,125 +77,117 @@ const MethodologySection = () => {
           </div>
         </div>
 
-        {/* 3 Pilares */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-14">
-          {/* Pilar 1 */}
-          <div className="group bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-            <div className="w-20 h-20 bg-gradient-to-r from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform">
-              <Award className="w-10 h-10 text-white" />
-            </div>
+        {/* Flow Steps - Desktop */}
+        <div className="hidden lg:block mb-16">
+          <div className="relative">
+            {/* Connection Line */}
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-gray-500 rounded-full transform -translate-y-1/2 z-0"></div>
             
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 text-center">
-              ARQUITETURA DE AUTORIDADE
-            </h3>
-            
-            <p className="text-secondary text-center mb-8 font-semibold">
-              "Ser reconhecido como referência na sua especialidade"
-            </p>
-            
-            <div className="space-y-5 mb-8">
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-secondary/5 to-transparent rounded-xl border border-secondary/10">
-                <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-secondary" />
+            <div className="grid grid-cols-3 gap-8 relative z-10">
+              {pillars.map((pillar, index) => (
+                <div key={pillar.number} className="flex flex-col items-center">
+                  {/* Step Card */}
+                  <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 w-full mb-6">
+                    {/* Icon Circle */}
+                    <div className={`w-20 h-20 bg-gradient-to-r ${pillar.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg`}>
+                      <pillar.icon className="w-10 h-10 text-white" />
+                    </div>
+                    
+                    {/* Step Number */}
+                    <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-xl font-bold text-gray-700">{pillar.number}</span>
+                    </div>
+                    
+                    {/* Content */}
+                    <h3 className="text-lg font-bold text-gray-900 mb-3 text-center leading-tight">
+                      {pillar.title}
+                    </h3>
+                    
+                    <p className={`text-${pillar.color} text-center mb-6 font-semibold text-sm`}>
+                      "{pillar.subtitle}"
+                    </p>
+                    
+                    {/* Features */}
+                    <div className="space-y-3">
+                      {pillar.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className={`flex items-start space-x-3 p-3 bg-gradient-to-r from-${pillar.color}/5 to-transparent rounded-xl border border-${pillar.color}/10`}>
+                          <div className={`w-5 h-5 bg-${pillar.color}/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                            <CheckCircle className={`w-3 h-3 text-${pillar.color}`} />
+                          </div>
+                          <span className="text-sm text-gray-700 font-medium leading-relaxed">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Arrow (except for last item) */}
+                  {index < pillars.length - 1 && (
+                    <div className="absolute top-1/2 transform -translate-y-1/2" 
+                         style={{ left: `${(index + 1) * 33.33 - 2}%` }}>
+                      <div className="w-8 h-8 bg-white rounded-full border-4 border-gray-300 flex items-center justify-center shadow-md">
+                        <ArrowRight className="w-4 h-4 text-gray-600" />
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <span className="text-base text-gray-700 font-medium">Arquitetura de marca pessoal profissional</span>
-              </div>
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-secondary/5 to-transparent rounded-xl border border-secondary/10">
-                <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-secondary" />
-                </div>
-                <span className="text-base text-gray-700 font-medium">Posicionamento estratégico diferenciado</span>
-              </div>
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-secondary/5 to-transparent rounded-xl border border-secondary/10">
-                <div className="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-secondary" />
-                </div>
-                <span className="text-base text-gray-700 font-medium">Comunicação de valor consistente</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Pilar 2 */}
-          <div className="group bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-            <div className="w-20 h-20 bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform">
-              <Target className="w-10 h-10 text-white" />
-            </div>
-            
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 text-center">
-              SISTEMA DE ATRAÇÃO SELETIVA
-            </h3>
-            
-            <p className="text-primary text-center mb-8 font-semibold">
-              "Atraindo pacientes certos, não curiosos de convênio"
-            </p>
-            
-            <div className="space-y-5 mb-8">
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-primary/5 to-transparent rounded-xl border border-primary/10">
-                <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-primary" />
-                </div>
-                <span className="text-base text-gray-700 font-medium">Conteúdo estratégico (posts, stories, roteiros)</span>
-              </div>
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-primary/5 to-transparent rounded-xl border border-primary/10">
-                <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-primary" />
-                </div>
-                <span className="text-base text-gray-700 font-medium">Funil validado de atração e conversão</span>
-              </div>
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-primary/5 to-transparent rounded-xl border border-primary/10">
-                <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-primary" />
-                </div>
-                <span className="text-base text-gray-700 font-medium">Tráfego pago como acelerador</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Pilar 3 */}
-          <div className="group bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-            <div className="w-20 h-20 bg-gradient-to-r from-gray-700 to-gray-600 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform">
-              <Zap className="w-10 h-10 text-white" />
-            </div>
-            
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 text-center">
-              AUTOMAÇÃO INTELIGENTE COM GENIUMED
-            </h3>
-            
-            <p className="text-gray-700 text-center mb-8 font-semibold">
-              "Sistema que trabalha 24h gerando previsibilidade"
-            </p>
-            
-            <div className="space-y-5 mb-8">
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-gray-100/80 to-transparent rounded-xl border border-gray-200">
-                <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-gray-600" />
-                </div>
-                <span className="text-base text-gray-700 font-medium">Qualificação de leads via IA</span>
-              </div>
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-gray-100/80 to-transparent rounded-xl border border-gray-200">
-                <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-gray-600" />
-                </div>
-                <span className="text-base text-gray-700 font-medium">Engajamento inteligente 24/7</span>
-              </div>
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-gray-100/80 to-transparent rounded-xl border border-gray-200">
-                <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-gray-600" />
-                </div>
-                <span className="text-base text-gray-700 font-medium">Pós-consulta automatizado para fidelização</span>
-              </div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Integration Center */}
-        <div className="relative mb-14">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl"></div>
+        {/* Flow Steps - Mobile/Tablet */}
+        <div className="lg:hidden space-y-8 mb-16">
+          {pillars.map((pillar, index) => (
+            <div key={pillar.number} className="relative">
+              <div className="flex items-start space-x-6">
+                {/* Left Side - Icon and Number */}
+                <div className="flex-shrink-0 flex flex-col items-center">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${pillar.gradient} rounded-2xl flex items-center justify-center shadow-lg mb-3`}>
+                    <pillar.icon className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                    <span className="text-sm font-bold text-gray-700">{pillar.number}</span>
+                  </div>
+                  
+                  {/* Vertical Line (except for last item) */}
+                  {index < pillars.length - 1 && (
+                    <div className="w-1 h-16 bg-gradient-to-b from-primary to-secondary rounded-full mt-4"></div>
+                  )}
+                </div>
+                
+                {/* Right Side - Content */}
+                <div className="flex-1 bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 leading-tight">
+                    {pillar.title}
+                  </h3>
+                  <p className={`text-${pillar.color} mb-4 font-semibold text-sm`}>
+                    "{pillar.subtitle}"
+                  </p>
+                  
+                  {/* Features */}
+                  <div className="space-y-3">
+                    {pillar.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className={`flex items-start space-x-3 p-3 bg-gradient-to-r from-${pillar.color}/5 to-transparent rounded-xl border border-${pillar.color}/10`}>
+                        <div className={`w-5 h-5 bg-${pillar.color}/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                          <CheckCircle className={`w-3 h-3 text-${pillar.color}`} />
+                        </div>
+                        <span className="text-sm text-gray-700 font-medium leading-relaxed">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Integration Result - Flow Style */}
+        <div className="mb-16">
           <div className="relative bg-gradient-to-r from-primary to-secondary rounded-3xl p-8 sm:p-12 text-center text-white shadow-2xl">
             <div className="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
-              <Zap className="w-12 h-12" />
+              <TrendingUp className="w-12 h-12" />
             </div>
-            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">INTEGRAÇÃO SISTÊMICA</h4>
+            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">RESULTADO: INTEGRAÇÃO SISTÊMICA</h4>
             <p className="text-lg sm:text-xl font-medium max-w-4xl mx-auto leading-relaxed opacity-95">
               Os 3 pilares trabalham em perfeita sinergia para criar um ecossistema completo 
               de crescimento sustentável, previsível e escalável para sua prática médica.
@@ -156,7 +195,7 @@ const MethodologySection = () => {
           </div>
         </div>
 
-        {/* Vantagens */}
+        {/* Vantagens Exclusivas */}
         <div className="bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg">
           <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
             Vantagens Exclusivas do Sistema{" "}
