@@ -42,10 +42,6 @@ const ContactSection = () => {
             </span>
           </h2>
           
-          <p className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Receba uma análise personalizada e detalhada da sua especialidade. 
-            Veja exatamente como outros médicos estão aplicando nossa metodologia.
-          </p>
           
         </div>
 
