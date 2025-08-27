@@ -68,7 +68,7 @@ const AboutDoctorSection = () => {
                         <div className="text-sm text-muted-foreground">Seguidores</div>
                       </div>
                       <div className="bg-secondary/10 rounded-xl p-3 text-center">
-                        <div className="text-2xl font-bold text-secondary">20Mi</div>
+                        <div className="text-2xl font-bold text-secondary">20 Milhões</div>
                         <div className="text-sm text-muted-foreground">Faturamento/mês</div>
                       </div>
                     </div>
