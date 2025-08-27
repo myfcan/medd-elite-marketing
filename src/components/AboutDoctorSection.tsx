@@ -94,18 +94,8 @@ const AboutDoctorSection = () => {
                       Sou Dr. Saulo Nader, neurologista pela USP, médico pela FAMEMA, apresentado como Dr. Tontura em minhas diversas aparições em programas.
                     </p>
                     
-                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-4 mb-4 border-l-4 border-primary">
+                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-4 mb-6 border-l-4 border-primary">
                       <p className="text-lg font-semibold text-foreground">HOJE FATURA 20 MILHÕES POR MÊS.</p>
-                    </div>
-
-                    {/* Credentials */}
-                    <div className="space-y-2">
-                      {credentials.map((credential, index) => (
-                        <div key={index} className="flex items-start gap-3">
-                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-muted-foreground">{credential}</span>
-                        </div>
-                      ))}
                     </div>
                   </div>
 
