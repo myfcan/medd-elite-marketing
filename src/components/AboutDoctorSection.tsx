@@ -109,6 +109,24 @@ const AboutDoctorSection = () => {
                     </p>
                   </div>
 
+                  {/* Stats Cards */}
+                  <div className="grid grid-cols-2 gap-4 mt-6">
+                    <div className="bg-primary/10 rounded-2xl p-6 text-center border border-primary/20">
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <TrendingUp className="w-6 h-6 text-white" />
+                      </div>
+                      <div className="text-3xl font-bold text-primary mb-2">700%</div>
+                      <div className="text-sm text-muted-foreground">Valor Consulta subiu para R$2.500,00</div>
+                    </div>
+                    <div className="bg-secondary/10 rounded-2xl p-6 text-center border border-secondary/20">
+                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <Award className="w-6 h-6 text-white" />
+                      </div>
+                      <div className="text-3xl font-bold text-secondary mb-2">5X</div>
+                      <div className="text-sm text-muted-foreground">Seu faturamento aumentou 5X após o MEED</div>
+                    </div>
+                  </div>
+
                   {/* CTA Button */}
                   <div className="text-center">
                     <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 group">
