@@ -51,41 +51,6 @@ const ProblemSection = () => {
           </div>
         </div>
 
-        {/* Key Statistic */}
-        <div className="relative flex justify-center items-center py-16">
-          {/* Floating Circle */}
-          <div className="relative">
-            {/* Background gradient circle */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/30 rounded-full blur-2xl scale-110 animate-pulse"></div>
-            
-            {/* Main circle */}
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-primary to-primary/80 rounded-full flex flex-col items-center justify-center text-center shadow-2xl transform hover:scale-105 transition-all duration-500">
-              <div className="text-6xl lg:text-7xl font-bold text-white mb-4">
-                87%
-              </div>
-              <div className="text-white text-lg lg:text-xl font-semibold px-8 leading-tight">
-                dos médicos faturam menos de R$ 50k/mês
-              </div>
-            </div>
-            
-            {/* Floating elements around the circle */}
-            <div className="absolute -top-8 -right-8 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center animate-bounce" style={{animationDelay: '0.5s', animationDuration: '3s'}}>
-              <span className="text-primary font-bold text-sm">📉</span>
-            </div>
-            
-            <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center animate-bounce" style={{animationDelay: '1s', animationDuration: '2.5s'}}>
-              <span className="text-primary font-bold text-xs">💼</span>
-            </div>
-          </div>
-          
-          {/* Bottom text */}
-          <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 max-w-4xl text-center">
-            <p className="text-lg text-gray-600 leading-relaxed">
-              A falta de posicionamento estratégico é o principal fator que limita 
-              o potencial de crescimento da maioria dos profissionais médicos no Brasil
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );
