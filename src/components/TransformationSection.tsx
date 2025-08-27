@@ -1,4 +1,4 @@
-import { ArrowRight, X, Check, Sparkles } from 'lucide-react';
+import { ArrowRight, X, TrendingDown, Calendar, DollarSign, TrendingUp, CalendarCheck, Crown, Sparkles, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const TransformationSection = () => {
@@ -20,152 +20,178 @@ const TransformationSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="absolute top-20 left-10 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+      
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+        <div className="text-center mb-20 animate-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
             A diferença entre{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               ter um sistema e não ter
             </span>
           </h2>
-        </div>
-
-        {/* Visual Comparison */}
-        <div className="relative mb-20">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="grid grid-cols-20 h-full">
-              {[...Array(400)].map((_, i) => (
-                <div key={i} className="border border-gray-300"></div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative grid lg:grid-cols-2 gap-16 items-center">
-            {/* Before - Visual */}
-            <div className="space-y-8">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <X className="w-10 h-10 text-red-500" />
-                </div>
-                <h3 className="text-3xl font-bold text-gray-700 mb-8">Sem Sistema</h3>
-              </div>
-              
-              {/* Visual Problems */}
-              <div className="space-y-6">
-                <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-2xl">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">📉</span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-red-700">Renda Imprevisível</div>
-                      <div className="text-sm text-red-600">Dependente de fatores externos</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-2xl">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">⏰</span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-red-700">Agenda Vazia</div>
-                      <div className="text-sm text-red-600">Esperando indicações chegarem</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-2xl">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">💸</span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-red-700">Preços Baixos</div>
-                      <div className="text-sm text-red-600">Competindo por convênios</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* After - Visual */}
-            <div className="space-y-8">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Sparkles className="w-10 h-10 text-white" />
-                </div>
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-8">
-                  Com M.E.D.D.
-                </h3>
-              </div>
-              
-              {/* Visual Solutions */}
-              <div className="space-y-6">
-                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary p-6 rounded-r-2xl">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">📈</span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-primary">Renda Previsível</div>
-                      <div className="text-sm text-gray-600">Sistema automatizado de atração</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary p-6 rounded-r-2xl">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">📅</span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-primary">Agenda Lotada</div>
-                      <div className="text-sm text-gray-600">Fluxo constante de pacientes</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary p-6 rounded-r-2xl">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">💎</span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-primary">Preços Premium</div>
-                      <div className="text-sm text-gray-600">Autoridade reconhecida no mercado</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Center Arrow */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-2xl animate-pulse">
-              <ArrowRight className="w-8 h-8 text-white" />
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-12 text-center border border-gray-200">
-          <h4 className="text-3xl font-bold text-gray-900 mb-6">Pronto Para Sua Transformação?</h4>
-          <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
-            Descubra como centenas de médicos já fizeram essa mudança com nossa metodologia comprovada
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Veja a transformação que acontece quando você implementa o método M.E.D.D.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
-              Ver Casos de Sucesso
-            </Button>
-            <Button variant="outline" className="border-2 border-gray-300 hover:bg-gray-50 px-8 py-3 rounded-full font-semibold">
-              Falar com Especialista
-            </Button>
+        </div>
+
+        {/* Modern Comparison Layout */}
+        <div className="relative mb-20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+            
+            {/* Without System - Enhanced */}
+            <div className="group relative">
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+              
+              <div className="relative bg-white/80 backdrop-blur-sm border border-red-200/50 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
+                {/* Header */}
+                <div className="text-center mb-8">
+                  <div className="relative inline-block">
+                    <div className="w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                      <X className="w-10 h-10 text-red-600" />
+                    </div>
+                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-red-800 mb-2">Sem Sistema</h3>
+                  <p className="text-sm text-red-600">Deixando tudo para o acaso</p>
+                </div>
+
+                {/* Problems */}
+                <div className="space-y-4">
+                  {[
+                    { icon: TrendingDown, title: "Renda Imprevisível", desc: "Dependente de fatores externos", color: "red" },
+                    { icon: Calendar, title: "Agenda Vazia", desc: "Esperando indicações chegarem", color: "orange" },
+                    { icon: DollarSign, title: "Preços Baixos", desc: "Competindo por convênios", color: "amber" }
+                  ].map((item, index) => (
+                    <div key={index} className="group/item bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-5 border border-red-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center shadow-md">
+                          <item.icon className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-red-800 mb-1">{item.title}</h4>
+                          <p className="text-sm text-red-600/80">{item.desc}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Status */}
+                <div className="mt-6 p-4 bg-red-100/50 rounded-2xl border border-red-200/50">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-semibold text-red-800">Status: Instabilidade</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* With M.E.D.D. - Enhanced */}
+            <div className="group relative lg:mt-0 mt-8">
+              {/* Premium glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
+              
+              <div className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 backdrop-blur-sm border border-primary/20 rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden">
+                {/* Background pattern */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-secondary/10 rounded-full translate-y-12 -translate-x-12"></div>
+                
+                {/* Header */}
+                <div className="text-center mb-8 relative z-10">
+                  <div className="relative inline-block">
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4 shadow-xl">
+                      <Sparkles className="w-10 h-10 text-white" />
+                    </div>
+                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                      <span className="text-xs text-white font-bold">✓</span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
+                    Com M.E.D.D.
+                  </h3>
+                  <p className="text-sm text-primary">Sistema completo de atração</p>
+                </div>
+
+                {/* Solutions */}
+                <div className="space-y-4 relative z-10">
+                  {[
+                    { icon: TrendingUp, title: "Renda Previsível", desc: "Sistema automatizado de atração", gradient: "from-green-500 to-emerald-500" },
+                    { icon: CalendarCheck, title: "Agenda Lotada", desc: "Fluxo constante de pacientes", gradient: "from-blue-500 to-cyan-500" },
+                    { icon: Crown, title: "Preços Premium", desc: "Autoridade reconhecida no mercado", gradient: "from-purple-500 to-pink-500" }
+                  ].map((item, index) => (
+                    <div key={index} className="group/item bg-white/60 backdrop-blur-sm rounded-2xl p-5 border border-primary/20 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                      <div className="flex items-center gap-4">
+                        <div className={`w-12 h-12 bg-gradient-to-br ${item.gradient} rounded-xl flex items-center justify-center shadow-md`}>
+                          <item.icon className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-primary mb-1">{item.title}</h4>
+                          <p className="text-sm text-muted-foreground">{item.desc}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Status */}
+                <div className="mt-6 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border border-primary/30 relative z-10">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse"></div>
+                    <span className="text-sm font-semibold text-primary">Status: Crescimento Sustentável</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Enhanced Center Arrow */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 hidden lg:block">
+            <div className="relative">
+              {/* Glow ring */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-md opacity-70 animate-pulse scale-125"></div>
+              {/* Main button */}
+              <div className="relative w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 border-4 border-white">
+                <ArrowRight className="w-8 h-8 text-white animate-pulse" />
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile transformation indicator */}
+          <div className="flex justify-center lg:hidden my-8">
+            <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-xl rotate-90">
+              <ArrowRight className="w-6 h-6 text-white" />
+            </div>
+          </div>
+        </div>
+
+        {/* Enhanced Bottom CTA */}
+        <div className="relative animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-xl opacity-50"></div>
+          <div className="relative bg-gradient-to-br from-white via-primary/5 to-secondary/5 backdrop-blur-sm rounded-3xl p-12 text-center border border-primary/20 shadow-2xl">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
+                <Target className="w-6 h-6 text-white" />
+              </div>
+              <h4 className="text-3xl font-bold text-foreground">Pronto Para Sua Transformação?</h4>
+            </div>
+            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+              Descubra como <strong className="text-primary">centenas de médicos</strong> já fizeram essa mudança com nossa metodologia comprovada
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 border border-secondary/20">
+                Ver Casos de Sucesso
+              </Button>
+              <Button variant="outline" className="border-2 border-primary/30 hover:bg-primary/5 px-8 py-3 rounded-full font-semibold hover:border-primary/50 transition-all">
+                Falar com Especialista
+              </Button>
+            </div>
           </div>
         </div>
       </div>
