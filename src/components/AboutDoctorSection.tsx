@@ -50,13 +50,11 @@ const AboutDoctorSection = () => {
                 
                 {/* Left Column - Photo */}
                 <div className="relative">
-                  <div className="w-full h-96 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl shadow-lg flex items-center justify-center overflow-hidden">
-                    <img 
-                      src="/lovable-uploads/05359bbe-3a30-4152-87c9-b0aa29851318.png" 
-                      alt="Dr. Saulo Nader - Neurologista e caso de sucesso do Método M.E.D.D."
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
+                  <img 
+                    src="/lovable-uploads/05359bbe-3a30-4152-87c9-b0aa29851318.png" 
+                    alt="Dr. Saulo Nader - Neurologista e caso de sucesso do Método M.E.D.D."
+                    className="w-full h-[500px] object-cover rounded-2xl shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5"
+                  />
                   {/* Badge */}
                   <div className="absolute -top-4 -right-4 bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                     R$ 20Mi/mês
