@@ -12,12 +12,13 @@ const ConsequencesSection = () => {
         {/* Header */}
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
-            <span className="bg-gradient-to-r from-primary via-primary/80 to-secondary bg-clip-text text-transparent">
-              Lote sua agenda com pacientes no particular
+            A diferença entre{" "}
+            <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+              ter um sistema
             </span>{" "}
-            e cresça com estratégias de{" "}
+            e{" "}
             <span className="bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-400 bg-clip-text text-transparent">
-              Marketing ético
+              não ter
             </span>
           </h2>
         </div>
