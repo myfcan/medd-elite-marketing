@@ -64,12 +64,12 @@ const AboutDoctorSection = () => {
                     {/* Quick Stats */}
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-primary/10 rounded-xl p-3 text-center">
-                        <div className="text-2xl font-bold text-primary">+2M</div>
-                        <div className="text-sm text-muted-foreground">Seguidores</div>
+                        <div className="text-2xl font-bold text-primary">700%</div>
+                        <div className="text-sm text-muted-foreground">Valor Consulta subiu para R$2.500,00</div>
                       </div>
                       <div className="bg-secondary/10 rounded-xl p-3 text-center">
-                        <div className="text-2xl font-bold text-secondary">20 Milhões</div>
-                        <div className="text-sm text-muted-foreground">Faturamento/mês</div>
+                        <div className="text-2xl font-bold text-secondary">5X</div>
+                        <div className="text-sm text-muted-foreground">Seu faturamento aumentou 5X após o MEED</div>
                       </div>
                     </div>
                   </div>
