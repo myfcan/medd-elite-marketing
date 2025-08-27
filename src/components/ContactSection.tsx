@@ -29,6 +29,51 @@ const ContactSection = () => {
   return (
     <section id="contato" className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-6xl mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-8 shadow-xl animate-scale-in">
+            <Sparkles className="w-10 h-10 text-white" />
+          </div>
+          
+          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+            Descubra se sua especialidade{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              se adequa ao Método M.E.D.D.
+            </span>
+          </h2>
+          
+          <p className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+            Receba uma análise personalizada e detalhada da sua especialidade. 
+            Veja exatamente como outros médicos estão aplicando nossa metodologia.
+          </p>
+          
+          {/* Value Props */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-7 h-7 text-secondary" />
+              </div>
+              <h4 className="font-bold mb-2 text-gray-900">Análise Gratuita</h4>
+              <p className="text-sm text-gray-600">Totalmente personalizada para sua especialidade</p>
+            </div>
+            
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-7 h-7 text-primary" />
+              </div>
+              <h4 className="font-bold mb-2 text-gray-900">100% Confidencial</h4>
+              <p className="text-sm text-gray-600">Seus dados protegidos com total segurança</p>
+            </div>
+            
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Star className="w-7 h-7 text-secondary" />
+              </div>
+              <h4 className="font-bold mb-2 text-gray-900">Exclusivo para Médicos</h4>
+              <p className="text-sm text-gray-600">Conteúdo desenvolvido especialmente</p>
+            </div>
+          </div>
+        </div>
 
         {/* Form Container */}
         <div className="relative max-w-4xl mx-auto">
