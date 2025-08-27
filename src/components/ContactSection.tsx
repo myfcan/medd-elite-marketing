@@ -138,54 +138,6 @@ const ContactSection = () => {
                 </Button>
               </div>
             </form>
-
-            {/* Trust Indicators */}
-            <div className="grid md:grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200">
-              <div className="flex items-center space-x-3 text-center md:text-left">
-                <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-6 h-6 text-secondary" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-sm text-gray-900">Análise Personalizada</h5>
-                  <p className="text-xs text-gray-600">Para sua especialidade específica</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3 text-center md:text-left">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Lock className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-sm text-gray-900">Dados 100% Protegidos</h5>
-                  <p className="text-xs text-gray-600">Total confidencialidade garantida</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3 text-center md:text-left">
-                <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Star className="w-6 h-6 text-secondary" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-sm text-gray-900">Conteúdo Exclusivo</h5>
-                  <p className="text-xs text-gray-600">Desenvolvido apenas para médicos</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Social Proof */}
-            <div className="mt-8 text-center">
-              <div className="flex items-center justify-center space-x-3 mb-3">
-                <div className="flex -space-x-2">
-                  {[...Array(5)].map((_, i) => (
-                    <div key={i} className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full border-2 border-white"></div>
-                  ))}
-                </div>
-                <Users className="w-5 h-5 text-gray-400" />
-              </div>
-              <p className="text-sm text-gray-600">
-                <strong className="text-gray-900">+500 médicos</strong> já receberam nossa análise personalizada
-              </p>
-            </div>
           </div>
         </div>
       </div>
