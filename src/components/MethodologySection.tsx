@@ -86,8 +86,8 @@ const MethodologySection = () => {
             <div className="grid grid-cols-3 gap-8 relative z-10">
               {pillars.map((pillar, index) => (
                 <div key={pillar.number} className="flex flex-col items-center">
-                  {/* Step Card */}
-                  <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 w-full mb-6">
+                  {/* Step Card - Fixed height for uniformity */}
+                  <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 w-full mb-6 h-[600px] flex flex-col">
                     {/* Icon Circle */}
                     <div className={`w-20 h-20 bg-gradient-to-r ${pillar.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg`}>
                       <pillar.icon className="w-10 h-10 text-white" />
@@ -107,8 +107,8 @@ const MethodologySection = () => {
                       "{pillar.subtitle}"
                     </p>
                     
-                    {/* Features */}
-                    <div className="space-y-3">
+                    {/* Features - flex-grow to fill remaining space */}
+                    <div className="space-y-3 flex-grow">
                       {pillar.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className={`flex items-start space-x-3 p-3 bg-gradient-to-r from-${pillar.color}/5 to-transparent rounded-xl border border-${pillar.color}/10`}>
                           <div className={`w-5 h-5 bg-${pillar.color}/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
@@ -155,8 +155,8 @@ const MethodologySection = () => {
                   )}
                 </div>
                 
-                {/* Right Side - Content */}
-                <div className="flex-1 bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg">
+                {/* Right Side - Content - Fixed min-height for uniformity */}
+                <div className="flex-1 bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg min-h-[280px] flex flex-col">
                   <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 leading-tight">
                     {pillar.title}
                   </h3>
@@ -164,8 +164,8 @@ const MethodologySection = () => {
                     "{pillar.subtitle}"
                   </p>
                   
-                  {/* Features */}
-                  <div className="space-y-3">
+                  {/* Features - flex-grow to fill remaining space */}
+                  <div className="space-y-3 flex-grow">
                     {pillar.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className={`flex items-start space-x-3 p-3 bg-gradient-to-r from-${pillar.color}/5 to-transparent rounded-xl border border-${pillar.color}/10`}>
                         <div className={`w-5 h-5 bg-${pillar.color}/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
