@@ -18,7 +18,7 @@ const AboutDoctorSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-background via-primary/5 to-secondary/10 relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-br from-background via-primary/5 to-secondary/10 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60"></div>
@@ -26,34 +26,34 @@ const AboutDoctorSection = () => {
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+        <div className="text-center mb-20 animate-fade-in">
+          <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
             Nossa{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Prova Social
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             O médico que comprova na prática os resultados do Método M.E.D.D.
           </p>
         </div>
 
         {/* Main Doctor Container */}
-        <div className="mb-20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <div className="relative group max-w-4xl mx-auto">
+        <div className="mb-24 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="relative group max-w-6xl mx-auto">
             {/* Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-3xl blur-2xl opacity-60 group-hover:opacity-80 transition-all duration-500"></div>
             
             {/* Main Container */}
-            <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-primary/20">
-              <div className="grid lg:grid-cols-2 gap-8">
+            <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-primary/20">
+              <div className="grid lg:grid-cols-2 gap-12">
                 
                 {/* Left Column - Photo */}
                 <div className="relative">
                   <img 
                     src="/lovable-uploads/05359bbe-3a30-4152-87c9-b0aa29851318.png" 
                     alt="Dr. Saulo Nader - Neurologista e caso de sucesso do Método M.E.D.D."
-                    className="w-full h-[500px] object-cover rounded-2xl shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5"
+                    className="w-full h-[600px] object-cover rounded-2xl shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5"
                   />
                   {/* Badge */}
                   <div className="absolute -top-4 -right-4 bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
