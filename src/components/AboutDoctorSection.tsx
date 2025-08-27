@@ -1,14 +1,7 @@
-import { Users, TrendingUp, Award, Star, CheckCircle, ArrowRight } from 'lucide-react';
+import { Award, Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const AboutDoctorSection = () => {
-  const achievements = [
-    { icon: TrendingUp, label: "Faturamento Antes", value: "R$ 45k", description: "70% convênios • Consultas R$ 350" },
-    { icon: Star, label: "Faturamento Depois", value: "R$ 180k", description: "100% particular • Consultas R$ 1.200" },
-    { icon: Users, label: "Seguidores", value: "+2M", description: "Referência nacional" },
-    { icon: Award, label: "Aparições na Mídia", value: "Nacional", description: "Múltiplos programas de TV" }
-  ];
-
   const credentials = [
     "Neurologista pela USP",
     "Médico pela FAMEMA", 
@@ -121,46 +114,6 @@ const AboutDoctorSection = () => {
           </div>
         </div>
 
-        {/* Achievement Stats */}
-        <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <div className="bg-white/40 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-primary/20">
-            <div className="text-center mb-12">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Transformação Mensurada</h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Resultados reais obtidos em 9 meses com a aplicação do Método M.E.D.D.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {achievements.map((achievement, index) => (
-                <div 
-                  key={index} 
-                  className="group relative bg-white/60 backdrop-blur-sm rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 border border-primary/10"
-                >
-                  {/* Icon */}
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-shadow">
-                    <achievement.icon className="w-8 h-8 text-white" />
-                  </div>
-                  
-                  {/* Value */}
-                  <div className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
-                    {achievement.value}
-                  </div>
-                  
-                  {/* Label */}
-                  <div className="font-semibold text-foreground mb-2">
-                    {achievement.label}
-                  </div>
-                  
-                  {/* Description */}
-                  <div className="text-sm text-muted-foreground">
-                    {achievement.description}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
