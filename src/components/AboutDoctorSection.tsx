@@ -3,18 +3,18 @@ import { Button } from '@/components/ui/button';
 
 const AboutDoctorSection = () => {
   const achievements = [
-    { icon: Users, label: "Pacientes Atendidos", value: "15,000+", description: "Ao longo de 18 anos de carreira" },
-    { icon: TrendingUp, label: "Crescimento Médio", value: "300%", description: "Aumento na receita dos clientes" },
-    { icon: Award, label: "Médicos Formados", value: "800+", description: "Profissionais capacitados pelo método" },
-    { icon: Star, label: "Taxa de Sucesso", value: "94%", description: "Dos médicos alcançam seus objetivos" }
+    { icon: TrendingUp, label: "Faturamento Antes", value: "R$ 45k", description: "70% convênios • Consultas R$ 350" },
+    { icon: Star, label: "Faturamento Depois", value: "R$ 180k", description: "100% particular • Consultas R$ 1.200" },
+    { icon: Users, label: "Seguidores", value: "+2M", description: "Referência nacional" },
+    { icon: Award, label: "Aparições na Mídia", value: "Nacional", description: "Múltiplos programas de TV" }
   ];
 
   const credentials = [
-    "Médico formado pela Universidade Federal de São Paulo (UNIFESP)",
-    "Pós-graduação em Gestão de Negócios em Saúde",
-    "Especialista em Marketing Médico Digital",
-    "Fundador do Método M.E.D.D.",
-    "Palestrante em congressos nacionais e internacionais"
+    "Neurologista pela USP",
+    "Médico pela FAMEMA", 
+    "Apresentado como Dr. Tontura em diversos programas",
+    "Referência nacional em sua especialidade",
+    "Múltiplas aparições na mídia"
   ];
 
   return (
@@ -28,13 +28,13 @@ const AboutDoctorSection = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-            Conheça o criador do{" "}
+            Nossa{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Método M.E.D.D.
+              Prova Social
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            O médico que revolucionou a forma como profissionais da saúde constroem suas carreiras
+            O médico que comprova na prática os resultados do Método M.E.D.D.
           </p>
         </div>
 
@@ -48,31 +48,31 @@ const AboutDoctorSection = () => {
               {/* Photo Container */}
               <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-primary/20">
                 <div className="relative">
-                  <img 
+                   <img 
                     src="/lovable-uploads/05359bbe-3a30-4152-87c9-b0aa29851318.png" 
-                    alt="Dr. Saulo Nader - Criador do Método M.E.D.D."
+                    alt="Dr. Saulo Nader - Neurologista e caso de sucesso do Método M.E.D.D."
                     className="w-full h-96 object-cover rounded-2xl shadow-lg"
                   />
                   {/* Badge */}
                   <div className="absolute -top-4 -right-4 bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    Fundador M.E.D.D.
+                    R$ 20Mi/mês
                   </div>
                 </div>
                 
                 {/* Name and Title */}
                 <div className="mt-6 text-center">
                   <h3 className="text-2xl font-bold text-foreground mb-2">Dr. Saulo Nader</h3>
-                  <p className="text-primary font-semibold mb-4">Médico Empreendedor & Mentor de Negócios em Saúde</p>
+                  <p className="text-primary font-semibold mb-4">Neurologista • Conhecido como "Dr. Tontura"</p>
                   
                   {/* Quick Stats */}
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-primary/10 rounded-xl p-3 text-center">
-                      <div className="text-2xl font-bold text-primary">18+</div>
-                      <div className="text-sm text-muted-foreground">Anos de Experiência</div>
+                      <div className="text-2xl font-bold text-primary">+2M</div>
+                      <div className="text-sm text-muted-foreground">Seguidores</div>
                     </div>
                     <div className="bg-secondary/10 rounded-xl p-3 text-center">
-                      <div className="text-2xl font-bold text-secondary">800+</div>
-                      <div className="text-sm text-muted-foreground">Médicos Formados</div>
+                      <div className="text-2xl font-bold text-secondary">20Mi</div>
+                      <div className="text-sm text-muted-foreground">Faturamento/mês</div>
                     </div>
                   </div>
                 </div>
@@ -88,19 +88,16 @@ const AboutDoctorSection = () => {
                 <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                   <Award className="w-4 h-4 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-foreground">Trajetória Profissional</h4>
+                <h4 className="text-xl font-bold text-foreground">Mini Resumo</h4>
               </div>
               
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Após anos construindo uma carreira médica de sucesso, Dr. Saulo identificou que a maioria dos 
-                médicos enfrentava os mesmos desafios: dependência de convênios, agenda instável e dificuldade 
-                para se posicionar como autoridade em sua especialidade.
+                Sou Dr. Saulo Nader, neurologista pela USP, médico pela FAMEMA, apresentado como Dr. Tontura em minhas diversas aparições em programas.
               </p>
               
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Foi então que desenvolveu o <strong className="text-primary">Método M.E.D.D.</strong>, um sistema 
-                estruturado que já transformou a carreira de centenas de médicos brasileiros.
-              </p>
+              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-6 mb-6 border-l-4 border-primary">
+                <p className="text-lg font-semibold text-foreground mb-2">HOJE FATURA 20 MILHÕES POR MÊS.</p>
+              </div>
 
               {/* Credentials */}
               <div className="space-y-3">
@@ -111,6 +108,24 @@ const AboutDoctorSection = () => {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Depoimento */}
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-primary/20">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                  <Star className="w-4 h-4 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-foreground">Depoimento</h4>
+              </div>
+              
+              <blockquote className="text-lg text-muted-foreground italic leading-relaxed border-l-4 border-primary pl-6">
+                "Em 9 meses, saí completamente dos convênios e multipliquei meu faturamento. O método M.E.D.D. não apenas me deu pacientes, me deu autoridade real no mercado."
+              </blockquote>
+              
+              <p className="text-sm text-muted-foreground mt-4 text-right">
+                <strong>Resultados obtidos em 9 meses de aplicação da metodologia</strong>
+              </p>
             </div>
 
             {/* CTA Button */}
@@ -127,9 +142,9 @@ const AboutDoctorSection = () => {
         <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="bg-white/40 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-primary/20">
             <div className="text-center mb-12">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Resultados Comprovados</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Transformação Mensurada</h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Números que demonstram o impacto real do Método M.E.D.D. na vida de médicos brasileiros
+                Resultados reais obtidos em 9 meses com a aplicação do Método M.E.D.D.
               </p>
             </div>
 
