@@ -2,7 +2,7 @@ import { AlertTriangle, TrendingUp, TrendingDown, BarChart3, Users, ArrowUp, Arr
 
 const FutureScenarioSection = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60"></div>

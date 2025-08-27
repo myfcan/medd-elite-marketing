@@ -2,10 +2,10 @@ import { Award, Target, Zap, CheckCircle, Users, Code, TrendingUp } from 'lucide
 
 const MethodologySection = () => {
   return (
-    <section id="metodologia" className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="metodologia" className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-14">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-8 shadow-lg">
             <span className="text-2xl font-bold text-white">M.E.D.D</span>
           </div>
@@ -31,7 +31,7 @@ const MethodologySection = () => {
         </div>
 
         {/* 3 Pilares */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid lg:grid-cols-3 gap-8 mb-14">
           {/* Pilar 1 */}
           <div className="group bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="w-20 h-20 bg-gradient-to-r from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform">
@@ -142,7 +142,7 @@ const MethodologySection = () => {
         </div>
 
         {/* Integration Center */}
-        <div className="relative mb-20">
+        <div className="relative mb-14">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl"></div>
           <div className="relative bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-center text-white shadow-2xl">
             <div className="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-8">

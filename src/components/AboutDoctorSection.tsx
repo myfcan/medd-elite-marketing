@@ -11,7 +11,7 @@ const AboutDoctorSection = () => {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-br from-background via-primary/5 to-secondary/10 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-background via-primary/5 to-secondary/10 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60"></div>
@@ -19,7 +19,7 @@ const AboutDoctorSection = () => {
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-20 animate-fade-in">
+        <div className="text-center mb-14 animate-fade-in">
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
             A{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -32,7 +32,7 @@ const AboutDoctorSection = () => {
         </div>
 
         {/* Main Doctor Container */}
-        <div className="mb-24 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="relative group max-w-6xl mx-auto">
             {/* Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-3xl blur-2xl opacity-60 group-hover:opacity-80 transition-all duration-500"></div>

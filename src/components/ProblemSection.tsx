@@ -2,7 +2,7 @@ import { UserX, TrendingDown, AlertTriangle, BarChart3 } from 'lucide-react';
 
 const ProblemSection = () => {
   return (
-    <section id="sobre" className="py-24 bg-white">
+    <section id="sobre" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
