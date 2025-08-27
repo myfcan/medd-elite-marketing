@@ -61,22 +61,21 @@ const AboutDoctorSection = () => {
                     alt="Dr. Saulo Nader - Neurologista e caso de sucesso do Método M.E.D.D."
                     className="w-full h-[600px] object-cover rounded-2xl shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5"
                   />
-                  
-                  {/* Quick Stats */}
-                  <div className="grid grid-cols-2 gap-4 mt-6">
-                    <div className="bg-primary/10 rounded-xl p-3 text-center">
-                      <div className="text-2xl font-bold text-primary">700%</div>
-                      <div className="text-sm text-muted-foreground">Valor Consulta subiu para R$2.500,00</div>
-                    </div>
-                    <div className="bg-secondary/10 rounded-xl p-3 text-center">
-                      <div className="text-2xl font-bold text-secondary">5X</div>
-                      <div className="text-sm text-muted-foreground">Seu faturamento aumentou 5X após o MEED</div>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Right Column - Info */}
                 <div className="space-y-6">
+                  {/* Quick Stats - Moved to top of right column */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-primary/10 rounded-xl p-4 text-center">
+                      <div className="text-2xl font-bold text-primary">700%</div>
+                      <div className="text-sm text-muted-foreground">Valor Consulta subiu para R$2.500,00</div>
+                    </div>
+                    <div className="bg-secondary/10 rounded-xl p-4 text-center">
+                      <div className="text-2xl font-bold text-secondary">5X</div>
+                      <div className="text-sm text-muted-foreground">Seu faturamento aumentou 5X após o MEED</div>
+                    </div>
+                  </div>
                   {/* DoutorTontura */}
                   <div>
                     <div className="flex items-center gap-3 mb-4">
