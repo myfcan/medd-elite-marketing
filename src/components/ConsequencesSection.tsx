@@ -94,7 +94,7 @@ const ConsequencesSection = () => {
                       label: "+45% ao ano", 
                       value: "", 
                       trend: "up", 
-                      description: "A demanda por consultas privadas cresce rápido — mais pacientes querem médicos de qualidade.",
+                      description: "Mais pacientes buscam consultas particulares",
                       icon: ArrowUp,
                       gradient: "from-green-400 to-emerald-500"
                     },
