@@ -44,7 +44,7 @@ const ContactSection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-3xl"></div>
           <div className="relative bg-white border-2 border-gray-200 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl">
             <div className="text-center mb-8 sm:mb-10">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 text-gray-900">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
                 Agende uma reunião agora e sai na frente dos seus concorrentes
               </h3>
               <p className="text-gray-600 text-base sm:text-lg">

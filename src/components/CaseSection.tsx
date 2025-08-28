@@ -7,7 +7,7 @@ const CaseSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
             Case de Sucesso:{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Dr. Saulo Martins

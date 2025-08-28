@@ -64,7 +64,7 @@ const Footer = () => {
 
           {/* Contact & Info */}
           <div className="lg:col-span-4">
-            <h3 className="text-2xl font-bold mb-8">Entre em Contato</h3>
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">Entre em Contato</h3>
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">

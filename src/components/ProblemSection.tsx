@@ -15,7 +15,7 @@ const ProblemSection = () => {
             <AlertTriangle className="w-5 h-5" />
             Realidade do Mercado Médico
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
             Por que médicos competentes continuam dependentes de convênios?
           </h2>
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
