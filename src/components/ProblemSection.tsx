@@ -7,10 +7,7 @@ const ProblemSection = () => {
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
-            Por que médicos competentes continuam{" "}
-            <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
-              dependentes de convênios?
-            </span>
+            Por que médicos competentes continuam dependentes de convênios?
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Mesmo com excelência técnica, a maioria dos médicos não consegue construir 
