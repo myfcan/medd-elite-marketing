@@ -47,7 +47,7 @@ const HeroSection = () => {
              </div>
 
             {/* Social Proof */}
-            <div className="flex items-center space-x-8 text-sm text-gray-600">
+            <div className="flex items-center space-x-8 text-sm text-gray-600 -mt-4">
               <div className="flex items-center space-x-2">
                 <div className="flex -space-x-2">
                   {[...Array(4)].map((_, i) => (
