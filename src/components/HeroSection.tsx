@@ -60,10 +60,10 @@ const HeroSection = () => {
           </div>
 
           {/* Doctor Image */}
-          <div className="flex justify-center lg:justify-end animate-scale-in">
+          <div className="flex justify-center lg:justify-end animate-scale-in mt-10">
             <div className="relative">
               {/* Floating Elements */}
-              <div className="absolute -top-8 -right-20 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              <div className="absolute -top-12 -right-24 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
                     <CheckCircle className="w-5 h-5 text-white" />
@@ -75,7 +75,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-8 -left-20 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
+              <div className="absolute -bottom-12 -left-24 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-base">R$</span>
