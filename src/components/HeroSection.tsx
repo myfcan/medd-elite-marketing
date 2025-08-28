@@ -100,24 +100,45 @@ const HeroSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-8 pt-6 border-t border-gray-200">
-          <p className="text-center text-gray-500 mb-8 sm:mb-12 text-lg sm:text-xl">Resultados comprovados de nossos clientes</p>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 text-center">
-            <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">+500</div>
-              <div className="text-gray-600 text-sm sm:text-base">Médicos Transformados COM MEDD</div>
+        <div className="mt-12 pt-8">
+          <h2 className="text-center text-gray-800 mb-4 text-xl sm:text-2xl font-semibold">Resultados obtidos em 6 meses de aplicação da metodologia</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+            {/* Bloco 1: Aumento no valor da consulta */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary/20 group hover:scale-105">
+              <div className="text-center">
+                <div className="inline-block p-3 bg-gradient-to-r from-primary to-secondary rounded-full mb-4 group-hover:shadow-lg transition-all duration-300">
+                  <span className="text-white font-bold text-xl">+250%</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">no valor da consulta</h3>
+                <div className="text-sm text-gray-600 mb-3">
+                  <span className="line-through text-red-500">De R$700</span> → <span className="text-primary font-bold">R$2.500</span>
+                </div>
+                <div className="text-xs text-gray-500">Valor Consulta após metodologia</div>
+              </div>
             </div>
-            <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">200%</div>
-              <div className="text-gray-600 text-sm sm:text-base">De Aumento No valor da consulta em 60 dias</div>
+
+            {/* Bloco 2: Faturamento */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-secondary/20 group hover:scale-105">
+              <div className="text-center">
+                <div className="inline-block p-3 bg-gradient-to-r from-secondary to-primary rounded-full mb-4 group-hover:shadow-lg transition-all duration-300">
+                  <span className="text-white font-bold text-xl">5X</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Aumento de receita</h3>
+                <div className="text-sm text-gray-600 mb-3">Seu faturamento aumentou 5X após o MEED</div>
+                <div className="text-xs text-gray-500">Receita multiplicada em 12 meses</div>
+              </div>
             </div>
-            <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">3X</div>
-              <div className="text-gray-600 text-sm sm:text-base">Aumento no faturamento em até 9 meses</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">87%</div>
-              <div className="text-gray-600 text-sm sm:text-base">Menos dependência de Convênios</div>
+
+            {/* Bloco 3: Agenda Premium */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary/20 group hover:scale-105">
+              <div className="text-center">
+                <div className="inline-block p-3 bg-gradient-to-r from-primary to-secondary rounded-full mb-4 group-hover:shadow-lg transition-all duration-300">
+                  <span className="text-white font-bold text-xl">+50</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Agenda premium</h3>
+                <div className="text-sm text-gray-600 mb-3">Leads qualificados por mês</div>
+                <div className="text-xs text-gray-500">Pacientes de alto valor</div>
+              </div>
             </div>
           </div>
         </div>
