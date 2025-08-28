@@ -126,7 +126,7 @@ const Footer = () => {
                 onClick={scrollToContact}
                 className="w-full bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white px-6 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all group"
               >
-                Solicitar Análise
+                Quero atrair pacientes premium
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>

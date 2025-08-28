@@ -41,7 +41,7 @@ const HeroSection = () => {
                  size="lg" 
                  className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
                >
-                 Quero Lotar Minha Agenda
+                 Quero atrair pacientes premium
                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                </Button>
              </div>

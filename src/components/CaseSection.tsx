@@ -153,7 +153,7 @@ const CaseSection = () => {
                 Descubra como aplicar o mesmo método na sua especialidade
               </p>
               <Button className="w-full bg-secondary hover:bg-secondary/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all">
-                Solicitar Análise Gratuita
+                Quero atrair pacientes premium
               </Button>
             </div>
           </div>

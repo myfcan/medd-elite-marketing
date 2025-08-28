@@ -59,7 +59,7 @@ const Header = () => {
               onClick={() => scrollToSection('contato')}
               className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-2.5 rounded-full transition-all duration-300 hover:scale-105"
             >
-              Começar Agora
+              Quero atrair pacientes premium
             </Button>
           </div>
 
@@ -104,7 +104,7 @@ const Header = () => {
                 onClick={() => scrollToSection('contato')}
                 className="w-full bg-secondary hover:bg-secondary/90 text-white font-medium mt-4 rounded-full"
               >
-                Começar Agora
+                Quero atrair pacientes premium
               </Button>
             </nav>
           </div>

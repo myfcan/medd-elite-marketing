@@ -133,7 +133,7 @@ const ContactSection = () => {
                   size="lg"
                   className="w-full bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white h-14 sm:h-16 text-base sm:text-lg font-bold shadow-xl rounded-2xl group transition-all hover:scale-[1.02]"
                 >
-                  Solicitar Análise Gratuita
+                  Quero atrair pacientes premium
                   <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
