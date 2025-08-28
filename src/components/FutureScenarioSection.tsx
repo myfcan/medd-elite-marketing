@@ -27,36 +27,36 @@ const FutureScenarioSection = () => {
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative group">
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-3xl blur-2xl opacity-60 group-hover:opacity-80 transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl opacity-60 group-hover:opacity-80 transition-all duration-500"></div>
               
               {/* Main Container */}
-              <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-orange-200/50">
+              <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-primary/20">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl flex items-center justify-center shadow-lg">
-                    <AlertTriangle className="w-8 h-8 text-orange-600" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center shadow-lg">
+                    <AlertTriangle className="w-8 h-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-orange-800">Cenário Atual</h3>
-                    <div className="w-8 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 mt-2"></div>
+                    <h3 className="text-2xl font-bold text-primary">Cenário Atual</h3>
+                    <div className="w-8 h-0.5 bg-gradient-to-r from-primary to-secondary mt-2"></div>
                   </div>
                 </div>
 
                 <div className="space-y-6">
-                  <div className="bg-orange-50/50 rounded-2xl p-6 border border-orange-200/30">
+                  <div className="bg-primary/5 rounded-2xl p-6 border border-primary/20">
                     <div className="flex items-center gap-4 mb-3">
-                      <div className="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center">
-                        <BarChart3 className="w-5 h-5 text-orange-600" />
+                      <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+                        <BarChart3 className="w-5 h-5 text-primary" />
                       </div>
-                      <h4 className="font-semibold text-orange-800">Saturação crescente do mercado médico</h4>
+                      <h4 className="font-semibold text-primary">Saturação crescente do mercado médico</h4>
                     </div>
                   </div>
 
-                  <div className="bg-red-50/50 rounded-2xl p-6 border border-red-200/30">
+                  <div className="bg-secondary/5 rounded-2xl p-6 border border-secondary/20">
                     <div className="flex items-center gap-4 mb-3">
-                      <div className="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
-                        <TrendingDown className="w-5 h-5 text-red-600" />
+                      <div className="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center">
+                        <TrendingDown className="w-5 h-5 text-secondary" />
                       </div>
-                      <h4 className="font-semibold text-red-800">Redução constante dos repasses de convênios</h4>
+                      <h4 className="font-semibold text-secondary">Redução constante dos repasses de convênios</h4>
                     </div>
                   </div>
                 </div>
