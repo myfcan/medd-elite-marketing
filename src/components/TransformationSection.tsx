@@ -20,7 +20,7 @@ const TransformationSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
+    <section className="py-6 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
@@ -28,8 +28,8 @@ const TransformationSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-14 animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 leading-tight">
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">
             A diferença entre{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               ter um sistema e não ter
@@ -41,7 +41,7 @@ const TransformationSection = () => {
         </div>
 
         {/* Modern Comparison Layout */}
-        <div className="relative mb-14 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div className="relative mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
             
             {/* Without System - Enhanced */}

@@ -53,7 +53,7 @@ const MethodologySection = () => {
   ];
 
   return (
-    <section id="metodologia" className="pt-32 md:pt-36 lg:pt-40 pb-16 md:pb-20 lg:pb-24 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <section id="metodologia" className="pt-20 md:pt-24 lg:pt-28 pb-8 md:pb-12 lg:pb-16 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
       {/* Background Elements - Responsive positioning */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-10 md:top-20 left-4 md:left-10 w-32 md:w-64 h-32 md:h-64 bg-primary/10 rounded-full blur-3xl opacity-30"></div>
@@ -61,7 +61,7 @@ const MethodologySection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header - Enhanced responsive typography */}
-        <div className="text-center mb-12 md:mb-16 lg:mb-20">
+        <div className="text-center mb-8 md:mb-10 lg:mb-12">
           <div className="inline-flex items-center justify-center w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-gradient-to-r from-primary to-secondary rounded-2xl md:rounded-3xl mb-8 md:mb-10 shadow-lg animate-fade-in">
             <span className="text-xl md:text-2xl lg:text-4xl font-bold text-white tracking-wider">M.E.D.D</span>
           </div>

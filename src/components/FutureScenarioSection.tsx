@@ -2,7 +2,7 @@ import { AlertTriangle, TrendingUp, TrendingDown, BarChart3, Users, ArrowUp, Arr
 
 const FutureScenarioSection = () => {
   return (
-    <section className="py-12 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
+    <section className="py-6 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60"></div>
@@ -10,8 +10,8 @@ const FutureScenarioSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 leading-tight">
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">
             O cenário que se desenha para{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               os próximos 5 anos

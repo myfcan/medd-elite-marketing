@@ -27,10 +27,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contato" className="py-12 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="contato" className="py-6 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-14">
+        <div className="text-center mb-6 sm:mb-8">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-8 shadow-xl animate-scale-in">
             <Sparkles className="w-10 h-10 text-white" />
           </div>
