@@ -75,7 +75,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-8 -left-20 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
+              <div className="absolute -bottom-24 -left-20 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-base">R$</span>
