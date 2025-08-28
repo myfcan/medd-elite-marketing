@@ -171,29 +171,6 @@ const TransformationSection = () => {
           </div>
         </div>
 
-        {/* Enhanced Bottom CTA */}
-        <div className="relative animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-xl opacity-50"></div>
-          <div className="relative bg-gradient-to-br from-white via-primary/5 to-secondary/5 backdrop-blur-sm rounded-3xl p-12 text-center border border-primary/20 shadow-2xl">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
-                <Target className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="text-3xl font-bold text-foreground">Pronto Para Sua Transformação?</h4>
-            </div>
-            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-              Descubra como <strong className="text-primary">centenas de médicos</strong> já fizeram essa mudança com nossa metodologia comprovada
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 border border-secondary/20">
-                Ver Casos de Sucesso
-              </Button>
-              <Button variant="outline" className="border-2 border-primary/30 hover:bg-primary/5 px-8 py-3 rounded-full font-semibold hover:border-primary/50 transition-all">
-                Falar com Especialista
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
