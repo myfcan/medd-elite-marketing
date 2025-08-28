@@ -109,7 +109,7 @@ const AboutDoctorSection = () => {
                   {/* CTA Button */}
                   <div className="text-center">
                     <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 group">
-                      Conheça Sua História Completa
+                      Quero atrair pacientes premium
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </div>
