@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-8 pt-6 border-t border-gray-200">
+        <div className="mt-13 pt-6 border-t border-gray-200">
           <p className="text-center text-gray-500 mb-8 sm:mb-12 text-lg sm:text-xl">Resultados comprovados de nossos clientes</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 text-center">
             <div>
