@@ -63,7 +63,7 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end animate-scale-in mt-10">
             <div className="relative">
               {/* Floating Elements - Responsivos */}
-              <div className="absolute -top-6 sm:-top-16 lg:-top-20 -right-2 sm:right-0 bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 shadow-xl border border-gray-100 animate-fade-in z-10" style={{animationDelay: '0.5s'}}>
+              <div className="absolute -top-12 sm:-top-16 lg:-top-20 right-2 sm:right-0 bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 shadow-xl border border-gray-100 animate-fade-in z-10" style={{animationDelay: '0.5s'}}>
                 <div className="flex items-center space-x-1 sm:space-x-3">
                   <div className="w-6 h-6 sm:w-10 sm:h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
                     <CheckCircle className="w-3 h-3 sm:w-5 sm:h-5 text-white" />
