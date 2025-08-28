@@ -23,7 +23,7 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Lote sua agenda com pacientes particulares com o{" "}
+              Sua Agenda Lotada De Pacientes Particulares Com o{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 M.E.D.D.
               </span>
