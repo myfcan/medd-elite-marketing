@@ -11,13 +11,13 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative pt-36 md:pt-40 lg:pt-44 pb-14 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
+    <section className="relative pt-24 sm:pt-32 md:pt-36 lg:pt-44 pb-8 sm:pb-14 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-secondary/10 to-primary/10 rounded-full blur-3xl"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[60vh] sm:min-h-[70vh]">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center min-h-[50vh] sm:min-h-[60vh] lg:min-h-[70vh]">
           {/* Content */}
           <div className="animate-slide-up">
 
@@ -62,8 +62,8 @@ const HeroSection = () => {
           {/* Doctor Image */}
           <div className="flex justify-center lg:justify-end animate-scale-in mt-10">
             <div className="relative">
-              {/* Floating Elements */}
-              <div className="absolute -top-20 right-0 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              {/* Floating Elements - Hidden on mobile, positioned for desktop */}
+              <div className="hidden lg:block absolute -top-20 right-0 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
                     <CheckCircle className="w-5 h-5 text-white" />
@@ -75,7 +75,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-20 -left-40 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
+              <div className="hidden lg:block absolute -bottom-20 -left-40 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-base">R$</span>
@@ -87,12 +87,12 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Main Image */}
-              <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
+              {/* Main Image - Responsive sizes */}
+              <div className="relative bg-white p-2 sm:p-4 rounded-2xl sm:rounded-3xl shadow-2xl">
                 <img 
                   src={doctorHero} 
                   alt="Médico profissional sorrindo" 
-                  className="rounded-2xl w-full max-w-md lg:max-w-lg object-cover"
+                  className="rounded-xl sm:rounded-2xl w-full max-w-sm sm:max-w-md lg:max-w-lg object-cover"
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-32 pt-6 border-t border-gray-200">
+        <div className="mt-16 sm:mt-24 lg:mt-32 pt-6 border-t border-gray-200">
           <p className="text-center text-gray-500 mb-8 sm:mb-12 text-lg sm:text-xl">Resultados comprovados de nossos clientes</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 text-center">
             <div>
