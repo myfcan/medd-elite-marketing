@@ -33,21 +33,6 @@ const HeroSection = () => {
               Entre para os 3% da elite médica mais bem paga do Brasil com estratégias comprovadas de marketing médico ético
             </p>
 
-            {/* Features */}
-            <div className="space-y-3 sm:space-y-4 mb-8 sm:mb-12">
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary" />
-                <span className="text-gray-700">Aumento médio de 300% no faturamento</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary" />
-                <span className="text-gray-700">Redução de 87% na dependência de convênios</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-secondary" />
-                <span className="text-gray-700">Resultados comprovados em 90 dias</span>
-              </div>
-            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
