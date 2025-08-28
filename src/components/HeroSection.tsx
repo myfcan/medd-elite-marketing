@@ -63,7 +63,7 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end animate-scale-in mt-10">
             <div className="relative">
               {/* Floating Elements */}
-              <div className="absolute -top-20 -right-20 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              <div className="absolute -top-20 right-0 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
                     <CheckCircle className="w-5 h-5 text-white" />
