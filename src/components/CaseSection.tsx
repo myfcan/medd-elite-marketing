@@ -58,54 +58,8 @@ const CaseSection = () => {
               <h4 className="text-xl font-bold mb-8 text-center">Transformação em Números</h4>
               
               <div className="space-y-8">
-                {/* Faturamento */}
-                <div className="border-b border-gray-100 pb-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-gray-600 font-medium">Faturamento Mensal</span>
-                    <DollarSign className="w-5 h-5 text-secondary" />
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-500">Antes</span>
-                      <span className="text-lg font-bold text-gray-400">R$ 45.000</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-secondary">Depois</span>
-                      <span className="text-2xl font-bold text-secondary">R$ 180.000</span>
-                    </div>
-                    <div className="text-center">
-                      <span className="bg-secondary/10 text-secondary font-bold px-3 py-1 rounded-full text-sm">
-                        +300% de crescimento
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Dependência de Convênios */}
-                <div className="border-b border-gray-100 pb-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-gray-600 font-medium">Dependência de Convênios</span>
-                    <Users className="w-5 h-5 text-primary" />
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-500">Antes</span>
-                      <span className="text-lg font-bold text-gray-400">70%</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-secondary">Depois</span>
-                      <span className="text-2xl font-bold text-secondary">0%</span>
-                    </div>
-                    <div className="text-center">
-                      <span className="bg-secondary/10 text-secondary font-bold px-3 py-1 rounded-full text-sm">
-                        100% Particular
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Valor da Consulta */}
-                <div>
+                <div className="border-b border-gray-100 pb-6">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-gray-600 font-medium">Valor da Consulta</span>
                     <TrendingUp className="w-5 h-5 text-secondary" />
@@ -113,15 +67,53 @@ const CaseSection = () => {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-500">Antes</span>
-                      <span className="text-lg font-bold text-gray-400">R$ 350</span>
+                      <span className="text-lg font-bold text-gray-400">R$ 700</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-secondary">Depois</span>
-                      <span className="text-2xl font-bold text-secondary">R$ 1.200</span>
+                      <span className="text-2xl font-bold text-secondary">R$ 2.500</span>
                     </div>
                     <div className="text-center">
                       <span className="bg-secondary/10 text-secondary font-bold px-3 py-1 rounded-full text-sm">
-                        +243% de valorização
+                        +250% de aumento
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Faturamento */}
+                <div className="border-b border-gray-100 pb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-gray-600 font-medium">Faturamento</span>
+                    <DollarSign className="w-5 h-5 text-secondary" />
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-500">Crescimento</span>
+                      <span className="text-2xl font-bold text-secondary">5X</span>
+                    </div>
+                    <div className="text-center">
+                      <span className="bg-secondary/10 text-secondary font-bold px-3 py-1 rounded-full text-sm">
+                        Receita multiplicada em 12 meses
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Agenda Premium */}
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-gray-600 font-medium">Agenda Premium</span>
+                    <Calendar className="w-5 h-5 text-secondary" />
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-500">Leads Qualificados</span>
+                      <span className="text-2xl font-bold text-secondary">+50</span>
+                    </div>
+                    <div className="text-center">
+                      <span className="bg-secondary/10 text-secondary font-bold px-3 py-1 rounded-full text-sm">
+                        Por mês
                       </span>
                     </div>
                   </div>
