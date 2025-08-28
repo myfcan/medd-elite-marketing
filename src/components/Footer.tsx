@@ -89,10 +89,10 @@ const Footer = () => {
                   <h4 className="font-semibold mb-2 text-white">Email Comercial</h4>
                   <p className="text-gray-400">
                     <a 
-                      href="mailto:suporte@medd.ai" 
+                      href="mailto:suporte@geniumed.ai" 
                       className="hover:text-secondary transition-colors underline decoration-2 underline-offset-4"
                     >
-                      suporte@medd.ai
+                      suporte@geniumed.ai
                     </a>
                   </p>
                   <p className="text-gray-400 mt-2 text-sm">
