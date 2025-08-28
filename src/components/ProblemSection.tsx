@@ -76,7 +76,7 @@ const ProblemSection = () => {
 
           {/* Bottom Row - Full width card */}
           <div className="group relative">
-            <div className="relative bg-gradient-to-r from-card/90 to-primary/5 backdrop-blur-sm border border-border rounded-3xl p-10 overflow-hidden transition-all duration-500 hover:scale-[1.01] hover:shadow-large hover:shadow-primary/25">
+            <div className="relative bg-gradient-to-r from-card/90 to-primary/5 backdrop-blur-sm border border-border rounded-3xl p-6 sm:p-8 lg:p-10 overflow-hidden transition-all duration-500 hover:scale-[1.01] hover:shadow-large hover:shadow-primary/25">
               {/* Decorative pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-6 left-6 w-3 h-3 bg-primary rounded-full"></div>
@@ -86,19 +86,19 @@ const ProblemSection = () => {
                 <div className="absolute bottom-12 right-16 w-2 h-2 bg-secondary rounded-full"></div>
               </div>
               
-              <div className="relative flex items-center gap-10">
+              <div className="relative flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 lg:gap-10">
                 {/* Icon */}
-                <div className="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-primary via-primary to-secondary rounded-3xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-large">
-                  <Zap className="w-12 h-12 text-primary-foreground" />
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-primary via-primary to-secondary rounded-2xl sm:rounded-3xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-large">
+                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-primary-foreground" />
                 </div>
                 
                 {/* Content */}
                 <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-6">
-                    <h3 className="text-4xl font-bold text-foreground leading-tight">Falta de Automação Inteligente</h3>
-                    <div className="px-4 py-2 bg-destructive/10 text-destructive rounded-full text-sm font-semibold shadow-soft">Crítico</div>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4 sm:mb-6">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground leading-tight">Falta de Automação Inteligente</h3>
+                    <div className="inline-flex px-3 py-1 sm:px-4 sm:py-2 bg-destructive/10 text-destructive rounded-full text-xs sm:text-sm font-semibold shadow-soft self-start">Crítico</div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed text-xl max-w-4xl">
+                  <p className="text-muted-foreground leading-relaxed text-base sm:text-lg lg:text-xl max-w-4xl">
                     Falta de automação inteligente e uso de IA para escalar.
                   </p>
                 </div>

@@ -62,26 +62,26 @@ const HeroSection = () => {
           {/* Doctor Image */}
           <div className="flex justify-center lg:justify-end animate-scale-in mt-10">
             <div className="relative">
-              {/* Floating Elements - Hidden on mobile, positioned for desktop */}
-              <div className="hidden lg:block absolute -top-20 right-0 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-white" />
+              {/* Floating Elements - Responsivos */}
+              <div className="absolute -top-12 sm:-top-16 lg:-top-20 -right-4 sm:right-0 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.5s'}}>
+                <div className="flex items-center space-x-2 sm:space-x-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-gray-900">Agenda Lotada</div>
+                    <div className="text-xs sm:text-sm font-semibold text-gray-900">Agenda Lotada</div>
                     <div className="text-xs text-gray-500">100% Particular</div>
                   </div>
                 </div>
               </div>
 
-              <div className="hidden lg:block absolute -bottom-20 -left-40 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-base">R$</span>
+              <div className="absolute -bottom-12 sm:-bottom-16 lg:-bottom-20 -left-4 sm:-left-8 lg:-left-40 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
+                <div className="flex items-center space-x-2 sm:space-x-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm sm:text-base">R$</span>
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-gray-900">+300%</div>
+                    <div className="text-xs sm:text-sm font-semibold text-gray-900">+300%</div>
                     <div className="text-xs text-gray-500">Faturamento</div>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 sm:mt-24 lg:mt-32 pt-6 border-t border-gray-200">
+        <div className="mt-20 sm:mt-24 lg:mt-32 pt-6 border-t border-gray-200">
           <p className="text-center text-gray-500 mb-8 sm:mb-12 text-lg sm:text-xl">Resultados comprovados de nossos clientes</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 text-center">
             <div>
