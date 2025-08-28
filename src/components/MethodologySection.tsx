@@ -46,7 +46,7 @@ const MethodologySection = () => {
       iconBg: "bg-gray-200",
       features: [
         "Qualificação de leads via IA",
-        "Engajamento inteligente 24/7",
+        "Atendimento inteligente 24/7",
         "Pós-consulta automatizado para fidelização"
       ]
     }
