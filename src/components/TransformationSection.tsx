@@ -23,7 +23,7 @@ const TransformationSection = () => {
     <section className="py-12 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div className="absolute top-20 left-10 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
@@ -47,19 +47,19 @@ const TransformationSection = () => {
             {/* Without System - Enhanced */}
             <div className="group relative">
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
               
-              <div className="relative bg-white/80 backdrop-blur-sm border border-red-200/50 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="relative bg-white/80 backdrop-blur-sm border border-primary/20 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
                 {/* Header */}
                 <div className="text-center mb-8">
                   <div className="relative inline-block">
-                    <div className="w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-full flex items-center justify-center mb-4 shadow-lg">
-                      <X className="w-10 h-10 text-red-600" />
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                      <X className="w-10 h-10 text-primary" />
                     </div>
-                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
+                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-primary rounded-full animate-pulse"></div>
                   </div>
-                  <h3 className="text-2xl font-bold text-red-800 mb-2">Sem Sistema</h3>
-                  <p className="text-sm text-red-600">Deixando tudo para o acaso</p>
+                  <h3 className="text-2xl font-bold text-primary mb-2">Sem Sistema</h3>
+                  <p className="text-sm text-secondary">Deixando tudo para o acaso</p>
                 </div>
 
                 {/* Problems */}
@@ -69,14 +69,14 @@ const TransformationSection = () => {
                     { icon: Calendar, title: "Agenda Vazia", desc: "Esperando indicações chegarem", color: "orange" },
                     { icon: DollarSign, title: "Preços Baixos", desc: "Competindo por convênios", color: "amber" }
                   ].map((item, index) => (
-                    <div key={index} className="group/item bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-5 border border-red-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                    <div key={index} className="group/item bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-5 border border-primary/10 hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center shadow-md">
+                        <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center shadow-md">
                           <item.icon className="w-6 h-6 text-white" />
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-semibold text-red-800 mb-1">{item.title}</h4>
-                          <p className="text-sm text-red-600/80">{item.desc}</p>
+                          <h4 className="font-semibold text-primary mb-1">{item.title}</h4>
+                          <p className="text-sm text-secondary/80">{item.desc}</p>
                         </div>
                       </div>
                     </div>
@@ -84,10 +84,10 @@ const TransformationSection = () => {
                 </div>
                 
                 {/* Status */}
-                <div className="mt-6 p-4 bg-red-100/50 rounded-2xl border border-red-200/50">
+                <div className="mt-6 p-4 bg-primary/5 rounded-2xl border border-primary/20">
                   <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-semibold text-red-800">Status: Instabilidade</span>
+                    <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+                    <span className="text-sm font-semibold text-primary">Status: Instabilidade</span>
                   </div>
                 </div>
               </div>
