@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative pt-36 md:pt-40 lg:pt-44 pb-28 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
+    <section className="relative pt-36 md:pt-40 lg:pt-44 pb-14 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-secondary/10 to-primary/10 rounded-full blur-3xl"></div>
@@ -75,7 +75,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-24 -left-20 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
+              <div className="absolute -bottom-8 -left-20 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 animate-fade-in" style={{animationDelay: '0.7s'}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-base">R$</span>
@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-13 pt-6 border-t border-gray-200">
+        <div className="mt-32 pt-6 border-t border-gray-200">
           <p className="text-center text-gray-500 mb-8 sm:mb-12 text-lg sm:text-xl">Resultados comprovados de nossos clientes</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 text-center">
             <div>
