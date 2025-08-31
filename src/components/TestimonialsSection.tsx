@@ -1,6 +1,7 @@
 import { Star } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
+import drFelipeImage from '@/assets/dr-felipe-rodrigues.jpg';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -29,7 +30,7 @@ const TestimonialsSection = () => {
       name: "Dr. Felipe Rodrigues",
       specialty: "Cardiologista",
       location: "Brasília",
-      avatar: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=150&h=150&fit=crop&crop=face",
+      avatar: drFelipeImage,
       rating: 5,
       testimonial: "O método me posicionou como referência em cardiologia preventiva. Minha consulta saltou de R$ 400 para R$ 1.200, e tenho lista de espera de 3 meses. Resultados que nem imaginava.",
       highlight: "Consulta de R$ 400 para R$ 1.200"
